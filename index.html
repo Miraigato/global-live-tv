@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global TV Live | צפייה בשידורים חיים מכל העולם</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z'/></svg>" />
+  <!-- HLS.js streaming engine -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="15" x="2" y="7" rx="2" ry="2"/>
+            <polyline points="17 2 12 7 7 2"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Global Live TV</h1>
+          <span>טלוויזיה עולמית בשידור ישיר</span>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="חפש ערוץ, מדינה או תחום (למשל: ספורט, ישראל, BBC, חדשות)..." autocomplete="off" />
+        <button id="clearSearchBtn" class="clear-search-btn" title="נקה חיפוש" style="display:none;">✕</button>
+      </div>
+
+      <!-- Top Actions -->
+      <div class="header-actions">
+        <button id="favTabBtn" class="btn btn-fav">
+          <span class="star-icon">★</span>
+          <span>מועדפים</span>
+          <span id="favCount" class="badge">0</span>
+        </button>
+        <button id="randomChannelBtn" class="btn btn-random" title="צפה בערוץ אקראי">
+          <span>🎲</span>
+          <span>ערוץ אקראי</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="main-layout">
+    <!-- Right Sidebar (Filters) -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>סינון וקטגוריות</h2>
+      </div>
+
+      <!-- Country Filters -->
+      <div class="sidebar-group">
+        <div class="group-title">
+          <span>מדינות מובילות</span>
+          <span class="counter" id="countriesFilterCount">0</span>
+        </div>
+        <div class="filters-scrollable" id="countriesList"></div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="sidebar-group">
+        <div class="group-title">
+          <span>קטגוריות</span>
+          <span class="counter" id="categoriesFilterCount">0</span>
+        </div>
+        <div class="filters-scrollable" id="categoriesList"></div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-view">
+      <!-- Player Section -->
+      <section class="player-panel">
+        <div class="player-box" id="playerBox">
+          <video id="videoElement" controls playsinline></video>
+
+          <!-- Idle Placeholder -->
+          <div class="player-placeholder" id="placeholder">
+            <div class="placeholder-icon">
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <h3>בחר ערוץ מהרשימה מטה כדי להתחיל לצפות</h3>
+            <p>מעל 12,000 ערוצים חיים ואיכותיים מסביב לגלובוס</p>
+          </div>
+
+          <!-- Live Channel Overlay Bar -->
+          <div class="stream-info-overlay" id="streamOverlay" style="display:none;">
+            <div class="stream-details">
+              <img id="overlayLogo" src="" alt="logo" class="stream-logo" onerror="this.src='data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%2364748b\'><path d=\'M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\'/></svg>'" />
+              <div>
+                <div class="stream-title-row">
+                  <h3 id="overlayName">שם הערוץ</h3>
+                  <span class="live-pill"><span class="dot"></span> שידור חי</span>
+                </div>
+                <div class="stream-subtext" id="overlayMeta">ישראל • כללי</div>
+              </div>
+            </div>
+            <div class="stream-status-wrapper">
+              <button id="overlaySourceBtn" class="action-circle-btn" title="הצג והעתק קישור מקור (Stream URL)">🔗</button>
+              <button id="overlayFavBtn" class="action-circle-btn" title="הוסף למועדפים">★</button>
+              <button id="theaterBtn" class="action-circle-btn" title="מצב קולנוע">⛶</button>
+              <button id="overlayFullscreenBtn" class="action-circle-btn" title="מסך מלא">🗖</button>
+              <span id="playerStatusText" class="badge-status status-connecting">מתחבר...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Channel Browser Section -->
+      <section class="browse-panel">
+        <!-- Quick Country Bar -->
+        <div class="quick-bar-wrapper">
+          <div class="quick-countries-bar" id="quickCountriesBar">
+            <button class="pill active" data-country="IL">🇮🇱 ישראל (ערוצי שידור חי)</button>
+            <button class="pill" data-country="JP">🇯🇵 יפן (30+ ערוצים)</button>
+            <button class="pill" data-country="ALL">🌍 כל העולם</button>
+            <button class="pill" data-country="US">🇺🇸 ארה"ב</button>
+            <button class="pill" data-country="UK">🇬🇧 בריטניה</button>
+            <button class="pill" data-country="FR">🇫🇷 צרפת</button>
+            <button class="pill" data-country="DE">🇩🇪 גרמניה</button>
+            <button class="pill" data-country="IT">🇮🇹 איטליה</button>
+            <button class="pill" data-country="ES">🇪🇸 ספרד</button>
+            <button class="pill" data-country="RU">🇷🇺 רוסיה</button>
+            <button class="pill" data-country="UA">🇺🇦 אוקראינה</button>
+            <button class="pill" data-country="TR">🇹🇷 טורקיה</button>
+            <button class="pill" data-country="AR">🇦🇷 ארגנטינה</button>
+            <button class="pill" data-country="BR">🇧🇷 ברזיל</button>
+            <button class="pill" data-country="CA">🇨🇦 קנדה</button>
+          </div>
+        </div>
+
+        <!-- Section Heading -->
+        <div class="results-header">
+          <div class="title-with-count">
+            <h2 id="viewHeading">ערוצים נבחרים</h2>
+            <span class="count-pill" id="totalMatchesCount">0 ערוצים</span>
+          </div>
+          <div class="results-actions">
+            <button id="checkActiveChannelsBtn" class="btn btn-check" title="בדוק וסנן ערוצים פעילים במדינה הנוכחית">
+              <span class="btn-icon">⚡</span>
+              <span>סנן ערוצים לא פעילים</span>
+              <span id="checkProgressBadge" class="badge" style="display:none;">0%</span>
+            </button>
+            <div class="sort-controls">
+              <label for="sortSelect">מיון:</label>
+              <select id="sortSelect">
+                <option value="default">ערוצים עובדים קודם</option>
+                <option value="nameAsc">שם הערוץ (א-ת / A-Z)</option>
+                <option value="country">לפי מדינה</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channels Grid -->
+        <div class="channels-grid" id="channelsGrid"></div>
+
+        <!-- Empty & Loading states -->
+        <div id="gridLoading" class="feedback-box">
+          <div class="spinner"></div>
+          <p>טוען ערוצים ממאגר השידורים העולמי...</p>
+        </div>
+
+        <div id="gridEmpty" class="feedback-box" style="display:none;">
+          <div style="font-size:2.5rem; margin-bottom:0.5rem;">🔍</div>
+          <h3>לא נמצאו ערוצים מתאימים</h3>
+          <p>נסה לשנות את מילת החיפוש או לבחור מדינה אחרת.</p>
+        </div>
+
+        <!-- Pagination / Load more -->
+        <div class="load-more-container" id="loadMoreContainer" style="display:none;">
+          <button id="loadMoreBtn" class="btn btn-load-more">טען ערוצים נוספים</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Source URL Modal -->
+  <div id="sourceModal" class="modal-backdrop" style="display:none;">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalChannelTitle">קישור מקור לשידור</h3>
+        <button id="closeModalBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">זהו קישור ההזרמה הישיר (M3U8 / Direct Stream). ניתן להעתיק או לפתוח בנגן חיצוני כגון VLC / Kodi:</p>
+        <div class="modal-input-group">
+          <input type="text" id="modalUrlInput" readonly />
+          <button id="copyUrlBtn" class="btn btn-primary">העתק קישור</button>
+        </div>
+        <div class="modal-links">
+          <a id="openUrlLink" href="#" target="_blank" rel="noopener noreferrer" class="external-link">🔗 פתח קישור בחלון חדש</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast feedback -->
+  <div id="toastNotification" class="toast-popup" style="display:none;"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
