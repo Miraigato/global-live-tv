@@ -2,6 +2,10 @@
 let allChannels = [];
 let filteredChannels = [];
 let currentChannel = null;
+let allVodItems = [];
+let filteredVodItems = [];
+let currentVodItem = null;
+let currentMode = 'live'; // 'live' or 'vod'
 let hlsInstance = null;
 let favorites = JSON.parse(localStorage.getItem('globaltv_favs') || '[]');
 let deadChannels = JSON.parse(localStorage.getItem('globaltv_dead_channels') || '{}'); // { [chId]: timestamp }
@@ -17,6 +21,8 @@ let sortOption = 'default';
 let isCheckingCurrentCountry = false;
 
 // DOM Elements
+const liveModeBtn = document.getElementById('liveModeBtn');
+const vodModeBtn = document.getElementById('vodModeBtn');
 const videoEl = document.getElementById('videoElement');
 const placeholderEl = document.getElementById('placeholder');
 const streamOverlayEl = document.getElementById('streamOverlay');
@@ -70,9 +76,26 @@ async function init() {
   setupEventListeners();
 
   try {
-    const res = await fetch('channels.json');
-    if (!res.ok) throw new Error('Failed to load channels');
-    allChannels = await res.json();
+    // Load channels
+    if (window.EMBEDDED_CHANNELS) {
+      allChannels = window.EMBEDDED_CHANNELS;
+    } else {
+      const res = await fetch('channels.json');
+      if (res.ok) allChannels = await res.json();
+    }
+
+    // Load VOD items
+    if (window.EMBEDDED_VOD) {
+      allVodItems = window.EMBEDDED_VOD;
+    } else {
+      try {
+        const vodRes = await fetch('vod.json');
+        if (vodRes.ok) allVodItems = await vodRes.json();
+      } catch (e) {
+        console.warn('VOD load warning:', e);
+      }
+    }
+
     gridLoading.style.display = 'none';
 
     buildSidebarFilters();
@@ -85,7 +108,6 @@ async function init() {
     if (initialCandidate) {
       playChannel(initialCandidate);
     }
-    // Note: Automatic channel probe removed as requested for maximum speed and instant loading!
   } catch (err) {
     console.error('Initialization error:', err);
     gridLoading.innerHTML = `<p style="color:var(--danger)">שגיאה בטעינת הערוצים: ${err.message}</p>`;
@@ -94,6 +116,57 @@ async function init() {
 
 // Build Sidebar Filters
 function buildSidebarFilters() {
+  if (currentMode === 'vod') {
+    // Build categories for VOD
+    const vodCategoryCounts = {};
+    allVodItems.forEach(item => {
+      const cat = item.category || 'כללי';
+      vodCategoryCounts[cat] = (vodCategoryCounts[cat] || 0) + 1;
+    });
+
+    // Sidebar: Countries box turns into Types (Movies / Series)
+    const movieCount = allVodItems.filter(v => v.type === 'movie').length;
+    const seriesCount = allVodItems.filter(v => v.type === 'series').length;
+
+    countriesFilterCountEl.textContent = '2';
+    countriesListEl.innerHTML = `
+      <button class="filter-btn ${selectedCountry === 'ALL' ? 'active' : ''}" data-country="ALL">
+        <span>🎬 כל התכנים</span>
+        <span class="filter-badge">${allVodItems.length}</span>
+      </button>
+      <button class="filter-btn ${selectedCountry === 'movie' ? 'active' : ''}" data-country="movie">
+        <span>🍿 סרטים ישראליים</span>
+        <span class="filter-badge">${movieCount}</span>
+      </button>
+      <button class="filter-btn ${selectedCountry === 'series' ? 'active' : ''}" data-country="series">
+        <span>📺 סדרות ישראליות</span>
+        <span class="filter-badge">${seriesCount}</span>
+      </button>
+    `;
+
+    // Category list for VOD
+    const sortedVodCats = Object.entries(vodCategoryCounts).sort((a, b) => b[1] - a[1]);
+    categoriesFilterCountEl.textContent = sortedVodCats.length;
+
+    let catHTML = `
+      <button class="filter-btn ${selectedCategory === 'ALL' ? 'active' : ''}" data-category="ALL">
+        <span>כל הז'אנרים</span>
+        <span class="filter-badge">${allVodItems.length}</span>
+      </button>
+    `;
+
+    sortedVodCats.forEach(([cat, count]) => {
+      catHTML += `
+        <button class="filter-btn ${selectedCategory === cat ? 'active' : ''}" data-category="${cat}">
+          <span>${cat}</span>
+          <span class="filter-badge">${count}</span>
+        </button>
+      `;
+    });
+    categoriesListEl.innerHTML = catHTML;
+    return;
+  }
+
   // Count by country
   const countryCounts = {};
   const categoryCounts = {};
@@ -147,7 +220,7 @@ function buildSidebarFilters() {
   categoriesFilterCountEl.textContent = sortedCategories.length;
 
   let catHTML = `
-    <button class="filter-btn active" data-category="ALL">
+    <button class="filter-btn ${selectedCategory === 'ALL' ? 'active' : ''}" data-category="ALL">
       <span>הכל</span>
       <span class="filter-badge">${allChannels.length}</span>
     </button>
@@ -155,7 +228,7 @@ function buildSidebarFilters() {
 
   sortedCategories.forEach(([cat, count]) => {
     catHTML += `
-      <button class="filter-btn" data-category="${cat}">
+      <button class="filter-btn ${selectedCategory === cat ? 'active' : ''}" data-category="${cat}">
         <span>${cat}</span>
         <span class="filter-badge">${count}</span>
       </button>
@@ -167,6 +240,42 @@ function buildSidebarFilters() {
 // Filter Logic
 function applyFilters() {
   displayedCount = PAGE_SIZE;
+
+  if (currentMode === 'vod') {
+    filteredVodItems = allVodItems.filter(item => {
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        const matchTitle = (item.title || '').toLowerCase().includes(q);
+        const matchCat = (item.category || '').toLowerCase().includes(q);
+        const matchCast = (item.cast || '').toLowerCase().includes(q);
+        const matchDesc = (item.description || '').toLowerCase().includes(q);
+        if (!matchTitle && !matchCat && !matchCast && !matchDesc) return false;
+      }
+
+      // In VOD mode, selectedCountry acts as type filter (movie / series / ALL)
+      if (selectedCountry !== 'ALL' && selectedCountry !== 'IL') {
+        if (item.type !== selectedCountry) return false;
+      }
+
+      if (selectedCategory !== 'ALL') {
+        if (item.category !== selectedCategory) return false;
+      }
+
+      if (showFavoritesOnly) {
+        if (!favorites.includes(item.id || item.streamUrl)) return false;
+      }
+
+      return true;
+    });
+
+    if (sortOption === 'nameAsc') {
+      filteredVodItems.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+    }
+
+    updateHeading();
+    renderGrid();
+    return;
+  }
 
   filteredChannels = allChannels.filter(c => {
     // Search text
@@ -222,6 +331,24 @@ function applyFilters() {
 }
 
 function updateHeading() {
+  if (currentMode === 'vod') {
+    let title = 'ספריית VOD ישראלי 🎬';
+    if (showFavoritesOnly) {
+      title = '⭐ כותרים מועדפים';
+    } else if (searchQuery) {
+      title = `תוצאות חיפוש VOD עבור "${searchQuery}"`;
+    } else if (selectedCountry === 'movie') {
+      title = '🍿 סרטי קולנוע ישראליים';
+    } else if (selectedCountry === 'series') {
+      title = '📺 סדרות טלוויזיה ישראליות';
+    } else if (selectedCategory !== 'ALL') {
+      title = `VOD: ${selectedCategory}`;
+    }
+    viewHeading.textContent = title;
+    totalMatchesCount.textContent = `${filteredVodItems.length.toLocaleString()} כותרים`;
+    return;
+  }
+
   let title = 'ערוצים נבחרים';
   if (showFavoritesOnly) {
     title = '⭐ ערוצים מועדפים';
@@ -239,8 +366,13 @@ function updateHeading() {
   totalMatchesCount.textContent = `${filteredChannels.length.toLocaleString()} ערוצים (${activeCount} פעילים)`;
 }
 
-// Render Channels Grid
+// Render Channels or VOD Grid
 function renderGrid() {
+  if (currentMode === 'vod') {
+    renderVodGrid();
+    return;
+  }
+
   if (filteredChannels.length === 0) {
     channelsGrid.innerHTML = '';
     gridEmpty.style.display = 'block';
@@ -283,6 +415,63 @@ function renderGrid() {
   channelsGrid.innerHTML = html;
 
   if (displayedCount < filteredChannels.length) {
+    loadMoreContainer.style.display = 'flex';
+  } else {
+    loadMoreContainer.style.display = 'none';
+  }
+}
+
+// Render VOD Grid
+function renderVodGrid() {
+  if (filteredVodItems.length === 0) {
+    channelsGrid.innerHTML = '';
+    gridEmpty.style.display = 'block';
+    loadMoreContainer.style.display = 'none';
+    return;
+  }
+
+  gridEmpty.style.display = 'none';
+  const slice = filteredVodItems.slice(0, displayedCount);
+
+  let html = '';
+  slice.forEach(item => {
+    const itemId = item.id || item.streamUrl;
+    const isFav = favorites.includes(itemId);
+    const isActive = currentVodItem && currentVodItem.id === item.id;
+    const typeLabel = item.type === 'movie' ? '🎬 סרט' : '📺 סדרה';
+    const metaExtra = item.duration || item.seasons || item.year;
+
+    html += `
+      <div class="vod-card ${isActive ? 'active' : ''}" data-vod-id="${encodeURIComponent(item.id)}" data-url="${encodeURIComponent(item.streamUrl)}">
+        <button class="card-fav-btn ${isFav ? 'is-fav' : ''}" data-fav-id="${encodeURIComponent(itemId)}" title="${isFav ? 'הסר ממועדפים' : 'הוסף למועדפים'}">
+          ★
+        </button>
+        <button class="card-source-btn" data-url="${encodeURIComponent(item.streamUrl)}" data-name="${encodeURIComponent(item.title)}" title="הצג קישור מקור">
+          🔗
+        </button>
+        <div class="vod-poster-wrapper">
+          <img src="${item.poster}" class="vod-poster" alt="${item.title}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 24 24\\' fill=\\'%23374151\\'><rect width=\\'24\\' height=\\'24\\'/><text x=\\'50%\\' y=\\'50%\\' fill=\\'%239ca3af\\' font-size=\\'12\\' text-anchor=\\'middle\\' dy=\\'.3em\\'>VOD</text></svg>'">
+          <div class="vod-play-overlay">
+            <div class="vod-play-icon">▶</div>
+          </div>
+          <span class="vod-type-badge">${typeLabel}</span>
+        </div>
+        <div class="vod-info">
+          <div class="vod-title" title="${item.title}">${item.title}</div>
+          <div class="vod-meta">
+            <span>📅 ${item.year || ''}</span>
+            ${metaExtra ? `<span>• ${metaExtra}</span>` : ''}
+            <span class="card-tag">${item.category}</span>
+          </div>
+          <p class="vod-desc" title="${item.description}">${item.description}</p>
+        </div>
+      </div>
+    `;
+  });
+
+  channelsGrid.innerHTML = html;
+
+  if (displayedCount < filteredVodItems.length) {
     loadMoreContainer.style.display = 'flex';
   } else {
     loadMoreContainer.style.display = 'none';
@@ -375,6 +564,78 @@ function playChannel(channel) {
   videoEl.onerror = () => {
     setStreamStatus('error', 'שידור לא זמין זמנית');
     markChannelDead(channel);
+  };
+}
+
+// VOD Player Engine
+function playVodItem(item) {
+  currentVodItem = item;
+  currentChannel = null; // reset live channel
+  placeholderEl.style.display = 'none';
+  streamOverlayEl.style.display = 'flex';
+
+  overlayLogoEl.src = item.poster || '';
+  overlayNameEl.textContent = item.title;
+  const metaType = item.type === 'movie' ? '🎬 סרט ישראלי' : '📺 סדרה ישראלית';
+  overlayMetaEl.textContent = `${metaType} • ${item.year || ''} • ${item.category || ''}`;
+
+  const itemId = item.id || item.streamUrl;
+  overlayFavBtn.classList.toggle('is-fav', favorites.includes(itemId));
+
+  setStreamStatus('connecting', 'טוען סרט / סדרה...');
+
+  // Highlight active VOD card
+  document.querySelectorAll('.vod-card').forEach(c => {
+    if (c.dataset.vodId === encodeURIComponent(item.id)) {
+      c.classList.add('active');
+    } else {
+      c.classList.remove('active');
+    }
+  });
+
+  const streamUrl = item.streamUrl;
+
+  if (hlsInstance) {
+    hlsInstance.destroy();
+    hlsInstance = null;
+  }
+
+  // Determine stream type: HLS (.m3u8) or Direct MP4
+  if (streamUrl.includes('.m3u8')) {
+    if (Hls.isSupported()) {
+      hlsInstance = new Hls({
+        enableWorker: true,
+        lowLatencyMode: false
+      });
+      hlsInstance.loadSource(streamUrl);
+      hlsInstance.attachMedia(videoEl);
+      hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+        videoEl.play().catch(e => console.warn('Autoplay prevented:', e));
+        setStreamStatus('playing', 'מנגן VOD ✨');
+      });
+      hlsInstance.on(Hls.Events.ERROR, (event, data) => {
+        if (data.fatal) {
+          setStreamStatus('error', 'שגיאה בטעינת הפרק/הסרט');
+        }
+      });
+    } else {
+      videoEl.src = streamUrl;
+      videoEl.play().catch(e => console.warn('Autoplay prevented:', e));
+      setStreamStatus('playing', 'מנגן VOD ✨');
+    }
+  } else {
+    // Direct MP4 or other video file
+    videoEl.src = streamUrl;
+    videoEl.play().catch(e => console.warn('Autoplay prevented:', e));
+    setStreamStatus('playing', 'מנגן סרט ישראלי 🎬');
+  }
+
+  videoEl.onplaying = () => {
+    setStreamStatus('playing', 'מנגן באיכות גבוהה 🟢');
+  };
+
+  videoEl.onerror = () => {
+    setStreamStatus('error', 'קובץ הווידאו אינו זמין כרגע');
   };
 }
 
@@ -587,7 +848,42 @@ function setupEventListeners() {
     applyFilters();
   });
 
-  // Channel Card Click & Card Fav Click delegation
+  // Mode Toggles (Live TV vs VOD)
+  if (liveModeBtn) {
+    liveModeBtn.addEventListener('click', () => {
+      if (currentMode === 'live') return;
+      currentMode = 'live';
+      liveModeBtn.classList.add('active');
+      vodModeBtn.classList.remove('active');
+      quickCountriesBar.parentElement.style.display = 'block';
+      checkActiveChannelsBtn.style.display = 'inline-flex';
+      selectedCountry = 'IL';
+      selectedCategory = 'ALL';
+      searchQuery = '';
+      searchInput.value = '';
+      buildSidebarFilters();
+      applyFilters();
+    });
+  }
+
+  if (vodModeBtn) {
+    vodModeBtn.addEventListener('click', () => {
+      if (currentMode === 'vod') return;
+      currentMode = 'vod';
+      vodModeBtn.classList.add('active');
+      liveModeBtn.classList.remove('active');
+      quickCountriesBar.parentElement.style.display = 'none';
+      checkActiveChannelsBtn.style.display = 'none';
+      selectedCountry = 'ALL';
+      selectedCategory = 'ALL';
+      searchQuery = '';
+      searchInput.value = '';
+      buildSidebarFilters();
+      applyFilters();
+    });
+  }
+
+  // Channel & VOD Card Click & Fav Click delegation
   channelsGrid.addEventListener('click', (e) => {
     const favBtn = e.target.closest('.card-fav-btn');
     if (favBtn) {
@@ -606,6 +902,18 @@ function setupEventListeners() {
       return;
     }
 
+    // VOD Card Click
+    const vodCard = e.target.closest('.vod-card');
+    if (vodCard) {
+      const vodId = decodeURIComponent(vodCard.dataset.vodId);
+      const item = allVodItems.find(v => v.id === vodId);
+      if (item) {
+        playVodItem(item);
+      }
+      return;
+    }
+
+    // Live Channel Card Click
     const card = e.target.closest('.channel-card');
     if (card) {
       const url = decodeURIComponent(card.dataset.url);
