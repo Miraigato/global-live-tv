@@ -252,8 +252,23 @@ body {
 .main-layout {
   display: flex;
   flex: 1;
-  height: calc(100vh - 65px);
-  overflow: hidden;
+  min-height: calc(100vh - 65px);
+}
+
+.content-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  min-width: 0;
+}
+
+.browse-panel {
+  flex: 1;
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
 }
 
 /* Sidebar */
@@ -348,13 +363,6 @@ body {
 }
 
 /* Content Area */
-.content-view {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background: var(--bg-main);
-}
 
 /* Player section */
 .player-panel {
@@ -663,7 +671,6 @@ video {
 /* Browse panel */
 .browse-panel {
   flex: 1;
-  overflow-y: auto;
   padding: 1.25rem 1.75rem;
   display: flex;
   flex-direction: column;

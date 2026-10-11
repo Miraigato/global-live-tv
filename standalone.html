@@ -266,8 +266,23 @@ body {
 .main-layout {
   display: flex;
   flex: 1;
-  height: calc(100vh - 65px);
-  overflow: hidden;
+  min-height: calc(100vh - 65px);
+}
+
+.content-view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  min-width: 0;
+}
+
+.browse-panel {
+  flex: 1;
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
 }
 
 /* Sidebar */
@@ -362,13 +377,6 @@ body {
 }
 
 /* Content Area */
-.content-view {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background: var(--bg-main);
-}
 
 /* Player section */
 .player-panel {
@@ -677,7 +685,6 @@ video {
 /* Browse panel */
 .browse-panel {
   flex: 1;
-  overflow-y: auto;
   padding: 1.25rem 1.75rem;
   display: flex;
   flex-direction: column;
@@ -129739,15 +129746,6 @@ function setupEventListeners() {
     }
   }
 
-  // Keyboard shortcut: Press 'F' for full screen
-  document.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    if (e.key === 'f' || e.key === 'F') {
-      e.preventDefault();
-      toggleFullscreen();
-    }
-  });
-
   // Fullscreen button in overlay
   if (overlayFullscreenBtn) {
     overlayFullscreenBtn.addEventListener('click', (e) => {
@@ -129761,6 +129759,59 @@ function setupEventListeners() {
     playerPanel.classList.toggle('theater-mode');
   });
 
+  // Next / Previous Channel Navigation
+  function playNextChannel() {
+    if (currentMode === 'vod') {
+      if (filteredVodItems.length === 0) return;
+      const currentIdx = filteredVodItems.findIndex(v => currentVodItem && v.id === currentVodItem.id);
+      const nextIdx = (currentIdx + 1) % filteredVodItems.length;
+      playVodItem(filteredVodItems[nextIdx]);
+      showToast(`🎬 ${filteredVodItems[nextIdx].title}`);
+      return;
+    }
+
+    if (filteredChannels.length === 0) return;
+    const currentIdx = filteredChannels.findIndex(c => currentChannel && (c.id === currentChannel.id || c.url === currentChannel.url));
+    const nextIdx = (currentIdx + 1) % filteredChannels.length;
+    playChannel(filteredChannels[nextIdx]);
+    showToast(`📺 ${filteredChannels[nextIdx].name}`);
+  }
+
+  function playPrevChannel() {
+    if (currentMode === 'vod') {
+      if (filteredVodItems.length === 0) return;
+      const currentIdx = filteredVodItems.findIndex(v => currentVodItem && v.id === currentVodItem.id);
+      const prevIdx = (currentIdx - 1 + filteredVodItems.length) % filteredVodItems.length;
+      playVodItem(filteredVodItems[prevIdx]);
+      showToast(`🎬 ${filteredVodItems[prevIdx].title}`);
+      return;
+    }
+
+    if (filteredChannels.length === 0) return;
+    const currentIdx = filteredChannels.findIndex(c => currentChannel && (c.id === currentChannel.id || c.url === currentChannel.url));
+    const prevIdx = (currentIdx - 1 + filteredChannels.length) % filteredChannels.length;
+    playChannel(filteredChannels[prevIdx]);
+    showToast(`📺 ${filteredChannels[prevIdx].name}`);
+  }
+
+  // Keyboard shortcut listener: 'F' for fullscreen, ArrowLeft/ArrowRight or [/] for next/prev channel
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    if (e.key === 'f' || e.key === 'F') {
+      e.preventDefault();
+      toggleFullscreen();
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageDown' || e.key === ']') {
+      // In RTL (Hebrew interface), Next channel is Left arrow
+      e.preventDefault();
+      playNextChannel();
+    } else if (e.key === 'ArrowRight' || e.key === 'PageUp' || e.key === '[') {
+      // Previous channel is Right arrow
+      e.preventDefault();
+      playPrevChannel();
+    }
+  });
+
   // Desktop Floating Mini-Player (PiP): shrinks to bottom-right when scrolling down, returns when at top
   function handleDesktopPiPScroll() {
     // Only activate PiP on desktop / laptop screens (width > 820px)
@@ -129772,9 +129823,15 @@ function setupEventListeners() {
       return;
     }
 
-    // Measure scroll distance inside browse-panel or window
-    const scrollPos = browsePanel ? browsePanel.scrollTop : (window.scrollY || document.documentElement.scrollTop);
-    const triggerThreshold = 180; // pixels scrolled before shrinking to bottom right
+    // Measure scroll distance across window, documentElement and body
+    const scrollPos = Math.max(
+      window.scrollY || 0,
+      document.documentElement.scrollTop || 0,
+      document.body.scrollTop || 0,
+      (browsePanel ? browsePanel.scrollTop : 0)
+    );
+
+    const triggerThreshold = 140; // Pixels scrolled before shrinking to bottom right
 
     if (scrollPos > triggerThreshold) {
       if (!playerPanel.classList.contains('pip-mode')) {
@@ -129792,29 +129849,26 @@ function setupEventListeners() {
   // Restore player to top on click on placeholder or restore button
   if (playerPipPlaceholder) {
     playerPipPlaceholder.addEventListener('click', () => {
-      if (browsePanel) {
-        browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+      if (browsePanel) browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
   if (pipRestoreBtn) {
     pipRestoreBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      if (browsePanel) {
-        browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+      if (browsePanel) browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
+  window.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
+  document.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
   if (browsePanel) {
     browsePanel.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
   }
-  window.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
   window.addEventListener('resize', handleDesktopPiPScroll, { passive: true });
 
   // Quick Countries Bar
