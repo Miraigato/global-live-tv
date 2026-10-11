@@ -40,14 +40,18 @@
       <!-- Top Mode Navigation & Actions -->
       <div class="header-actions">
         <div class="mode-toggle-group">
-          <button id="liveModeBtn" class="mode-btn active">
-            <span>📺</span>
+          <button id="liveModeBtn" class="mode-btn active" title="ערוצי טלוויזיה חיים">
+            <span>🔴</span>
             <span>שידור חי</span>
           </button>
-          <button id="vodModeBtn" class="mode-btn">
+          <button id="moviesModeBtn" class="mode-btn" title="סרטי קולנוע ישראליים">
             <span>🎬</span>
-            <span>VOD ישראלי</span>
-            <span class="badge badge-accent">חדש</span>
+            <span>סרטים</span>
+          </button>
+          <button id="seriesModeBtn" class="mode-btn" title="סדרות טלוויזיה ופרקים">
+            <span>📺</span>
+            <span>סדרות</span>
+            <span class="badge badge-accent">פרקים</span>
           </button>
         </div>
         <button id="favTabBtn" class="btn btn-fav">
@@ -121,6 +125,9 @@
               </div>
             </div>
             <div class="stream-status-wrapper">
+              <button id="overlayEpisodesBtn" class="action-circle-btn series-ep-btn" title="רשימת פרקים" style="display:none;">📋 פרקים</button>
+              <button id="overlayPrevEpBtn" class="action-circle-btn series-nav-btn" title="פרק קודם" style="display:none;">⏮</button>
+              <button id="overlayNextEpBtn" class="action-circle-btn series-nav-btn" title="פרק הבא" style="display:none;">⏭</button>
               <button id="pipRestoreBtn" class="action-circle-btn pip-restore-hint" title="החזר נגן למעלה">⬆</button>
               <button id="overlaySourceBtn" class="action-circle-btn" title="הצג והעתק קישור מקור (Stream URL)">🔗</button>
               <button id="overlayFavBtn" class="action-circle-btn" title="הוסף למועדפים">★</button>
@@ -223,6 +230,56 @@
         </div>
         <div class="modal-links">
           <a id="openUrlLink" href="#" target="_blank" rel="noopener noreferrer" class="external-link">🔗 פתח קישור בחלון חדש</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Series Details & Episode Browser Modal -->
+  <div id="seriesModal" class="series-modal-overlay" style="display:none;" aria-hidden="true">
+    <div class="series-modal-container">
+      <button id="closeSeriesModalBtn" class="series-modal-close" title="סגור">✕</button>
+
+      <!-- Series Backdrop & Hero Info -->
+      <div class="series-backdrop-wrapper">
+        <img id="seriesBackdropImg" src="" alt="Series Theme Backdrop" class="series-backdrop-img" />
+        <div class="series-backdrop-gradient"></div>
+        <div class="series-backdrop-content">
+          <img id="seriesModalPoster" src="" alt="Series Poster" class="series-modal-poster" />
+          <div class="series-modal-text">
+            <div class="series-modal-tags">
+              <span class="series-badge">📺 סדרה ישראלית</span>
+              <span class="series-genre-badge" id="seriesModalCategory">קומדיה</span>
+              <span class="series-year-badge" id="seriesModalYear">2024</span>
+              <span class="series-seasons-badge" id="seriesModalSeasons">4 עונות</span>
+            </div>
+            <h2 id="seriesModalTitle" class="series-modal-title">שם הסדרה</h2>
+            <p id="seriesModalDesc" class="series-modal-desc">תקציר הסדרה...</p>
+            <div class="series-modal-cast" id="seriesModalCast"><strong>שחקנים:</strong> ...</div>
+            <div class="series-modal-actions">
+              <button id="seriesPlayFirstBtn" class="btn btn-hero-play">▶ נגן פרק ראשון</button>
+              <button id="seriesFavBtn" class="btn btn-hero-fav">★ מועדפים</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Season Selector Tabs -->
+      <div class="series-seasons-bar" id="seriesSeasonsBar">
+        <!-- Dynamic Season buttons -->
+      </div>
+
+      <!-- Episodes Section -->
+      <div class="series-episodes-section">
+        <div class="episodes-header">
+          <div class="episodes-header-title">
+            <h3 id="episodesCountTitle">פרקים זמינים לצפייה</h3>
+            <span class="episodes-badge-count" id="seriesEpTotalBadge">0 פרקים</span>
+          </div>
+          <span class="episodes-hint">לחץ על פרק להפעלה ישירה בנגן</span>
+        </div>
+        <div class="episodes-grid" id="episodesGrid">
+          <!-- Dynamic Episode Cards -->
         </div>
       </div>
     </div>
