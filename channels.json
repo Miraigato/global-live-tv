@@ -126264,5 +126264,765 @@
     "flag": "🇯🇵",
     "category": "Japan TV",
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-news5-cmaf-rakutenjp/playlist.m3u8"
+  },
+  {
+    "id": "CNNPortugal.pt@SD",
+    "name": "CNN Portugal",
+    "logo": "https://i.imgur.com/bc6tYVZ.png",
+    "category": "News",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "https://github.com/thomraider12/canaistvpt/raw/main/m3u8s/cnnpt.m3u8"
+  },
+  {
+    "id": "15TV.mx",
+    "name": "15TV",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://cdn.fastocloud.com/leonel.m3u8"
+  },
+  {
+    "id": "AXN.pt",
+    "name": "AXN",
+    "logo": "",
+    "category": "movies",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "http://znty.dyndns.org:5010/hls/axn.m3u8"
+  },
+  {
+    "id": "Azteca7.mx",
+    "name": "Azteca 7",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://200.35.176.154:8000/play/a064/index.m3u8"
+  },
+  {
+    "id": "AztecaDeportesNetwork.mx",
+    "name": "Azteca Deportes Network",
+    "logo": "",
+    "category": "sports",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://209.14.115.253:8081/azteca-deportes/index.m3u8"
+  },
+  {
+    "id": "AztecaDeportesNetwork.mx",
+    "name": "Azteca Deportes Network",
+    "logo": "",
+    "category": "sports",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://38.194.226.190:8000/play/a02r/index.m3u8"
+  },
+  {
+    "id": "AztecaDeportesNetwork.mx",
+    "name": "Azteca Deportes Network",
+    "logo": "",
+    "category": "sports",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://live-manifest.production-public.tubi.io/live/6bf131c3-d664-424c-93c9-49188a788980/playlist.m3u8"
+  },
+  {
+    "id": "AztecaInternacional.mx",
+    "name": "Azteca Internacional",
+    "logo": "",
+    "category": "entertainment",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://167.249.23.102:8000/play/a0a3/index.m3u8"
+  },
+  {
+    "id": "bitMe.mx",
+    "name": "bitMe",
+    "logo": "",
+    "category": "entertainment",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://181.119.66.28:8081/BITME/index.m3u8"
+  },
+  {
+    "id": "bitMe.mx",
+    "name": "bitMe",
+    "logo": "",
+    "category": "entertainment",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://200.229.147.210:9999/play/a01y/index.m3u8"
+  },
+  {
+    "id": "Canal5.mx",
+    "name": "Canal 5",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.11.225.124:5000/live/canal5_hd/playlist.m3u8"
+  },
+  {
+    "id": "Canal5.mx",
+    "name": "Canal 5",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.5.119.43:4000/play/a05o/index.m3u8"
+  },
+  {
+    "id": "Canal5.mx",
+    "name": "Canal 5",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://206.135.11.174:8010/play/a0fl/index.m3u8"
+  },
+  {
+    "id": "Canal5.mx",
+    "name": "Canal 5",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.189.151.7:8000/play/a05s"
+  },
+  {
+    "id": "Canal5.mx",
+    "name": "Canal 5",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://132.255.210.69:8000/play/a06e"
+  },
+  {
+    "id": "Canal26.mx",
+    "name": "Canal 26",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://5fe2654d6127d.streamlock.net:443/telemetrika3/_definst_/videotelemetrika3/playlist.m3u8"
+  },
+  {
+    "id": "CineLatino.mx",
+    "name": "CineLatino",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://200.115.96.61:9090/play/a0i5/index.m3u8"
+  },
+  {
+    "id": "CineLatino.mx",
+    "name": "CineLatino",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://168.196.127.137:6001/play/a08o/index.m3u8"
+  },
+  {
+    "id": "CineLatino.mx",
+    "name": "CineLatino",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://200.115.120.1:8000/play/ca129/index.m3u8"
+  },
+  {
+    "id": "ClaroCinema.mx",
+    "name": "Claro Cinema",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.171.64.30:6060/play/a039/index.m3u8"
+  },
+  {
+    "id": "ClaroSports.mx",
+    "name": "Claro Sports",
+    "logo": "",
+    "category": "sports",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.171.64.30:6060/play/a00w/index.m3u8"
+  },
+  {
+    "id": "ClaroSports.mx",
+    "name": "Claro Sports",
+    "logo": "",
+    "category": "sports",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://jmp2.uk/plu-6320d2755e54db000783fd87.m3u8"
+  },
+  {
+    "id": "DePeliculaLatinAmerica.mx",
+    "name": "De Pelicula Latin America",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://181.119.66.28:8081/DE-PELICULA/index.m3u8"
+  },
+  {
+    "id": "DePeliculaLatinAmerica.mx",
+    "name": "De Pelicula Latin America",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://209.14.115.253:8081/DE-PELICULA/index.m3u8"
+  },
+  {
+    "id": "DePeliculaLatinAmerica.mx",
+    "name": "De Pelicula Latin America",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://181.224.200.5:2277/play/a0d1/index.m3u8"
+  },
+  {
+    "id": "DePeliculaLatinAmerica.mx",
+    "name": "De Pelicula Latin America",
+    "logo": "",
+    "category": "movies",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.60.55.141:9083/play/a0nf/index.m3u8"
+  },
+  {
+    "id": "DisneyChannel.pt",
+    "name": "Disney Channel",
+    "logo": "",
+    "category": "kids",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "http://zntx.dyndns.org:8085/hls/disney.m3u8"
+  },
+  {
+    "id": "DistritoComedia.mx",
+    "name": "Distrito Comedia",
+    "logo": "",
+    "category": "comedy",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://138.121.15.230:9002/DISTRITO-COMEDIA/index.m3u8"
+  },
+  {
+    "id": "DistritoComedia.mx",
+    "name": "Distrito Comedia",
+    "logo": "",
+    "category": "comedy",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.61.47.54:8000/play/a028/index.m3u8"
+  },
+  {
+    "id": "DistritoComedia.mx",
+    "name": "Distrito Comedia",
+    "logo": "",
+    "category": "comedy",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.5.57.58:8000/play/a07n/index.m3u8"
+  },
+  {
+    "id": "DistritoComedia.mx",
+    "name": "Distrito Comedia",
+    "logo": "",
+    "category": "comedy",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://15.204.142.109:22880/TELEVISA-PROVEEDOR-DISTRITO-COMEDIA/index.m3u8"
+  },
+  {
+    "id": "FUELTV.pt",
+    "name": "FUEL TV",
+    "logo": "",
+    "category": "sports",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "https://amg01074-fueltv-fueltvnz-samsungnz-i8ani.amagi.tv/playlist/amg01074-fueltv-fueltvnz-samsungnz/playlist.m3u8"
+  },
+  {
+    "id": "FUELTV.pt",
+    "name": "FUEL TV",
+    "logo": "",
+    "category": "sports",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist.m3u8"
+  },
+  {
+    "id": "Golden.mx",
+    "name": "Golden",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://209.14.115.253:8081/GOLDEN/index.m3u8"
+  },
+  {
+    "id": "Golden.mx",
+    "name": "Golden",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://138.121.15.230:9002/GOLDEN/index.m3u8"
+  },
+  {
+    "id": "Golden.mx",
+    "name": "Golden",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://181.224.200.5:2277/play/a0do/index.m3u8"
+  },
+  {
+    "id": "Golden.mx",
+    "name": "Golden",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://168.196.127.137:6001/play/a06y/index.m3u8"
+  },
+  {
+    "id": "Golden.mx",
+    "name": "Golden",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://rpn.bozztv.com/gusa/gusa-goldentv/index.m3u8"
+  },
+  {
+    "id": "GoldenEdge.mx",
+    "name": "Golden Edge",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://209.14.115.253:8081/GOLDEN-EDGE/index.m3u8"
+  },
+  {
+    "id": "GoldenEdge.mx",
+    "name": "Golden Edge",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://138.121.15.230:9002/GOLDEN-EDGE/index.m3u8"
+  },
+  {
+    "id": "GoldenEdge.mx",
+    "name": "Golden Edge",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://181.78.12.119:16123/play/ch47/index.m3u8"
+  },
+  {
+    "id": "GoldenEdge.mx",
+    "name": "Golden Edge",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://181.224.200.5:2277/play/a0bd/index.m3u8"
+  },
+  {
+    "id": "GoldenEdge.mx",
+    "name": "Golden Edge",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://168.196.127.137:6001/play/a09p/index.m3u8"
+  },
+  {
+    "id": "ImagenTV.mx",
+    "name": "Imagen TV",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://jmp2.uk/plu-64e35aff6b1fdb0008ea8441.m3u8"
+  },
+  {
+    "id": "ITVDeportes.mx",
+    "name": "ITV Deportes",
+    "logo": "",
+    "category": "entertainment",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://jmp2.uk/plu-63f7e3f9dff38e00082a57af.m3u8"
+  },
+  {
+    "id": "ITVDeportes.mx",
+    "name": "ITV Deportes",
+    "logo": "",
+    "category": "entertainment",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=3010"
+  },
+  {
+    "id": "LasEstrellas.mx",
+    "name": "Las Estrellas",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.189.151.7:8000/play/a07s"
+  },
+  {
+    "id": "LasEstrellasLatinAmerica.mx",
+    "name": "Las Estrellas Latin America",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.93.224.42/CANAL-LAS-ESTRELLAS/index.m3u8"
+  },
+  {
+    "id": "LasEstrellasLatinAmerica.mx",
+    "name": "Las Estrellas Latin America",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://209.14.115.253:8081/LAS-ESTRELLAS/index.m3u8"
+  },
+  {
+    "id": "LasEstrellasLatinAmerica.mx",
+    "name": "Las Estrellas Latin America",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://38.44.109.41:8003/play/a0he"
+  },
+  {
+    "id": "LasEstrellasLatinAmerica.mx",
+    "name": "Las Estrellas Latin America",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.60.55.141:9083/play/a0np/index.m3u8"
+  },
+  {
+    "id": "MariaVision.mx",
+    "name": "Maria Vision",
+    "logo": "",
+    "category": "religious",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/master.m3u8"
+  },
+  {
+    "id": "MC.mx",
+    "name": "MC",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.5.118.152:8000/play/a03r/index.m3u8"
+  },
+  {
+    "id": "MilenioTelevision.mx",
+    "name": "Milenio Television",
+    "logo": "",
+    "category": "news",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://mdstrm.com/live-stream-playlist/610178c7db32a4112d994650.m3u8"
+  },
+  {
+    "id": "RTPMundo.pt",
+    "name": "RTP Mundo",
+    "logo": "",
+    "category": "general",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "https://op-group1-swiftservehd-1.dens.tv/s/s38/index.m3u8"
+  },
+  {
+    "id": "SICOMTelevision.mx",
+    "name": "SICOM Television",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://5d0d1d7a6be9e.streamlock.net/sicom/canal2/playlist.m3u8"
+  },
+  {
+    "id": "TeleFormula.mx",
+    "name": "TeleFormula",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://jmp2.uk/plu-63d2c140c111bc0008cb890b.m3u8"
+  },
+  {
+    "id": "TeleHit.mx",
+    "name": "TeleHit",
+    "logo": "",
+    "category": "music",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://200.115.120.1:8000/play/ca048/index.m3u8"
+  },
+  {
+    "id": "TelehitMusica.mx",
+    "name": "Telehit Musica",
+    "logo": "",
+    "category": "music",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.61.55.34:2401/play/a06t/index.m3u8"
+  },
+  {
+    "id": "TeleplaySureste.mx",
+    "name": "Teleplay Sureste",
+    "logo": "",
+    "category": "entertainment",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://player.tvstream.mx/livestream/teleplay/livesd/playlist.m3u8"
+  },
+  {
+    "id": "TlnovelasLatinAmerica.mx",
+    "name": "Tlnovelas Latin America",
+    "logo": "",
+    "category": "series",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://138.121.15.230:9002/TELENOVELAS/index.m3u8"
+  },
+  {
+    "id": "TransmediaTelevisionMorelia.mx",
+    "name": "Transmedia Television Morelia",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://5ca3e84a76d30.streamlock.net/tmtv/videotmtv/playlist.m3u8"
+  },
+  {
+    "id": "TUDN.mx",
+    "name": "TUDN",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://45.5.118.152:8000/play/a08n/index.m3u8"
+  },
+  {
+    "id": "TVCuatro41.mx",
+    "name": "TV Cuatro 4.1",
+    "logo": "",
+    "category": "general",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "https://5f1af61612fb5.streamlock.net/tv4/tv4.smil/.m3u8"
+  },
+  {
+    "id": "TVI.pt",
+    "name": "TVI",
+    "logo": "",
+    "category": "general",
+    "country": "PT",
+    "countryName": "פורטוגל",
+    "flag": "🇵🇹",
+    "url": "http://zntx.dyndns.org:8085/hls/tvi.m3u8"
+  },
+  {
+    "id": "UnivisionLatinAmerica.mx",
+    "name": "Univision Latin America",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://15.204.246.24:8080/UnivisionHD/index.m3u8"
+  },
+  {
+    "id": "UnivisionLatinAmerica.mx",
+    "name": "Univision Latin America",
+    "logo": "",
+    "category": "General",
+    "country": "MX",
+    "countryName": "מקסיקו",
+    "flag": "🇲🇽",
+    "url": "http://190.93.224.42/UNIVISION/index.m3u8"
+  },
+  {
+    "id": "il-new-1",
+    "name": "HOT Action HD (הוט אקשן)",
+    "logo": "https://upload.wikimedia.org/wikipedia/he/thumb/4/4e/Hot_Action_Logo.png/300px-Hot_Action_Logo.png",
+    "category": "Movies",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "http://stream.mcquack.net/39/index.m3u8"
+  },
+  {
+    "id": "il-new-2",
+    "name": "ערוץ 20 מורשת (Heritage)",
+    "logo": "https://upload.wikimedia.org/wikipedia/he/thumb/e/e0/Channel20_Logo.png/300px-Channel20_Logo.png",
+    "category": "Culture",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "http://stream.mcquack.net/45/index.m3u8"
+  },
+  {
+    "id": "il-new-3",
+    "name": "קשת 12 (מקור שידור נקי HD)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Keshet12_2018.svg/300px-Keshet12_2018.svg.png",
+    "category": "General",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "http://stream.mcquack.net/293/index.m3u8"
+  },
+  {
+    "id": "il-new-4",
+    "name": "קשת 12 (מקור חלופי ישיר)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Keshet12_2018.svg/300px-Keshet12_2018.svg.png",
+    "category": "General",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "http://stream.mcquack.net/50/index.m3u8"
+  },
+  {
+    "id": "il-new-5",
+    "name": "כאן 11 (מקור שידור ישיר HD)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kan11Logo.svg/300px-Kan11Logo.svg.png",
+    "category": "General",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "http://stream.mcquack.net/49/index.m3u8"
+  },
+  {
+    "id": "il-new-6",
+    "name": "רשת 13 (שידור ישיר CDN חלופי)",
+    "logo": "https://upload.wikimedia.org/wikipedia/he/thumb/1/17/Reshet13Logo2022.svg/300px-Reshet13Logo2022.svg.png",
+    "category": "General",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8"
+  },
+  {
+    "id": "il-new-7",
+    "name": "וואלה! NEWS (שידור ישיר 24/7)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Walla%21_logo.svg/300px-Walla%21_logo.svg.png",
+    "category": "News",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "https://live.wcdn.co.il/news/prog_index.m3u8"
+  },
+  {
+    "id": "il-new-8",
+    "name": "ערוץ הכנסת 99 (רשמי HLS)",
+    "logo": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1e/Knesset_Channel.png/300px-Knesset_Channel.png",
+    "category": "News",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "https://kneset.gostreaming.tv/p2-kneset/_definst_/myStream/chunklist.m3u8"
+  },
+  {
+    "id": "il-new-9",
+    "name": "i24 News עברית (ערוץ משני HD)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/I24NEWS_Hebrew_Logo.png/300px-I24NEWS_Hebrew_Logo.png",
+    "category": "News",
+    "country": "IL",
+    "countryName": "ישראל",
+    "flag": "🇮🇱",
+    "url": "https://i24newshebrew-cdn.encoders.immergo.tv/2/streamPlaylist.m3u8"
   }
 ]
