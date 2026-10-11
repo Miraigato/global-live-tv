@@ -381,10 +381,100 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              right 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s ease,
+              border-radius 0.3s ease;
 }
 
 .player-panel.theater-mode {
   height: 75vh;
+}
+
+/* Floating Mini Player (Desktop PiP) when scrolling down */
+.player-panel.pip-mode {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  top: auto !important;
+  left: auto !important;
+  width: 380px !important;
+  height: 214px !important; /* 16:9 aspect ratio */
+  min-height: unset !important;
+  max-height: unset !important;
+  z-index: 1000 !important;
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 24px rgba(59, 130, 246, 0.35) !important;
+  animation: pipFadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pipFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.player-panel.pip-mode .stream-info-overlay {
+  padding: 0.4rem 0.6rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, transparent 100%);
+}
+
+.player-panel.pip-mode .stream-logo {
+  width: 26px;
+  height: 26px;
+}
+
+.player-panel.pip-mode .stream-title-row h3 {
+  font-size: 0.82rem;
+}
+
+.player-panel.pip-mode .stream-subtext {
+  display: none;
+}
+
+.player-panel.pip-mode .badge-status {
+  display: none;
+}
+
+/* Placeholder box to preserve layout height while player floats */
+.player-pip-placeholder {
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px dashed var(--border-light);
+  height: 48vh;
+  min-height: 280px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.player-pip-placeholder:hover {
+  background: rgba(59, 130, 246, 0.08);
+  color: #93c5fd;
+}
+
+.player-pip-placeholder.active {
+  display: flex;
+}
+
+/* Mini player return icon */
+.pip-restore-hint {
+  display: none;
+}
+.player-panel.pip-mode .pip-restore-hint {
+  display: flex;
 }
 
 .player-box {
@@ -1496,6 +1586,7 @@ video {
               </div>
             </div>
             <div class="stream-status-wrapper">
+              <button id="pipRestoreBtn" class="action-circle-btn pip-restore-hint" title="החזר נגן למעלה">⬆</button>
               <button id="overlaySourceBtn" class="action-circle-btn" title="הצג והעתק קישור מקור (Stream URL)">🔗</button>
               <button id="overlayFavBtn" class="action-circle-btn" title="הוסף למועדפים">★</button>
               <button id="theaterBtn" class="action-circle-btn" title="מצב קולנוע">⛶</button>
@@ -1505,6 +1596,11 @@ video {
           </div>
         </div>
       </section>
+
+      <!-- Placeholder that occupies the layout space when player is floating in PiP mode -->
+      <div id="playerPipPlaceholder" class="player-pip-placeholder">
+        <span>🎬 הנגן מוצג בחלון צף מוקטן (לחץ להחזרה לראש העמוד)</span>
+      </div>
 
       <!-- Channel Browser Section -->
       <section class="browse-panel">
@@ -128889,6 +128985,9 @@ const overlayFullscreenBtn = document.getElementById('overlayFullscreenBtn');
 const playerStatusText = document.getElementById('playerStatusText');
 const playerPanel = document.querySelector('.player-panel');
 const playerBox = document.getElementById('playerBox');
+const playerPipPlaceholder = document.getElementById('playerPipPlaceholder');
+const pipRestoreBtn = document.getElementById('pipRestoreBtn');
+const browsePanel = document.querySelector('.browse-panel');
 
 const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearchBtn');
@@ -129661,6 +129760,62 @@ function setupEventListeners() {
   theaterBtn.addEventListener('click', () => {
     playerPanel.classList.toggle('theater-mode');
   });
+
+  // Desktop Floating Mini-Player (PiP): shrinks to bottom-right when scrolling down, returns when at top
+  function handleDesktopPiPScroll() {
+    // Only activate PiP on desktop / laptop screens (width > 820px)
+    if (window.innerWidth <= 820) {
+      if (playerPanel.classList.contains('pip-mode')) {
+        playerPanel.classList.remove('pip-mode');
+        if (playerPipPlaceholder) playerPipPlaceholder.classList.remove('active');
+      }
+      return;
+    }
+
+    // Measure scroll distance inside browse-panel or window
+    const scrollPos = browsePanel ? browsePanel.scrollTop : (window.scrollY || document.documentElement.scrollTop);
+    const triggerThreshold = 180; // pixels scrolled before shrinking to bottom right
+
+    if (scrollPos > triggerThreshold) {
+      if (!playerPanel.classList.contains('pip-mode')) {
+        playerPanel.classList.add('pip-mode');
+        if (playerPipPlaceholder) playerPipPlaceholder.classList.add('active');
+      }
+    } else {
+      if (playerPanel.classList.contains('pip-mode')) {
+        playerPanel.classList.remove('pip-mode');
+        if (playerPipPlaceholder) playerPipPlaceholder.classList.remove('active');
+      }
+    }
+  }
+
+  // Restore player to top on click on placeholder or restore button
+  if (playerPipPlaceholder) {
+    playerPipPlaceholder.addEventListener('click', () => {
+      if (browsePanel) {
+        browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (pipRestoreBtn) {
+    pipRestoreBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (browsePanel) {
+        browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (browsePanel) {
+    browsePanel.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
+  }
+  window.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
+  window.addEventListener('resize', handleDesktopPiPScroll, { passive: true });
 
   // Quick Countries Bar
   quickCountriesBar.addEventListener('click', (e) => {

@@ -121,6 +121,7 @@
               </div>
             </div>
             <div class="stream-status-wrapper">
+              <button id="pipRestoreBtn" class="action-circle-btn pip-restore-hint" title="החזר נגן למעלה">⬆</button>
               <button id="overlaySourceBtn" class="action-circle-btn" title="הצג והעתק קישור מקור (Stream URL)">🔗</button>
               <button id="overlayFavBtn" class="action-circle-btn" title="הוסף למועדפים">★</button>
               <button id="theaterBtn" class="action-circle-btn" title="מצב קולנוע">⛶</button>
@@ -131,13 +132,20 @@
         </div>
       </section>
 
+      <!-- Placeholder that occupies the layout space when player is floating in PiP mode -->
+      <div id="playerPipPlaceholder" class="player-pip-placeholder">
+        <span>🎬 הנגן מוצג בחלון צף מוקטן (לחץ להחזרה לראש העמוד)</span>
+      </div>
+
       <!-- Channel Browser Section -->
       <section class="browse-panel">
         <!-- Quick Country Bar -->
         <div class="quick-bar-wrapper">
           <div class="quick-countries-bar" id="quickCountriesBar">
             <button class="pill active" data-country="IL">🇮🇱 ישראל (ערוצי שידור חי)</button>
-            <button class="pill" data-country="JP">🇯🇵 יפן (30+ ערוצים)</button>
+            <button class="pill" data-country="JP">🇯🇵 יפן (ערוצים פעילים)</button>
+            <button class="pill" data-country="MX">🇲🇽 מקסיקו (230+ ערוצים)</button>
+            <button class="pill" data-country="PT">🇵🇹 פורטוגל (70+ ערוצים)</button>
             <button class="pill" data-country="ALL">🌍 כל העולם</button>
             <button class="pill" data-country="US">🇺🇸 ארה"ב</button>
             <button class="pill" data-country="UK">🇬🇧 בריטניה</button>

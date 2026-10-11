@@ -35,6 +35,9 @@ const overlayFullscreenBtn = document.getElementById('overlayFullscreenBtn');
 const playerStatusText = document.getElementById('playerStatusText');
 const playerPanel = document.querySelector('.player-panel');
 const playerBox = document.getElementById('playerBox');
+const playerPipPlaceholder = document.getElementById('playerPipPlaceholder');
+const pipRestoreBtn = document.getElementById('pipRestoreBtn');
+const browsePanel = document.querySelector('.browse-panel');
 
 const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearchBtn');
@@ -179,21 +182,29 @@ function buildSidebarFilters() {
     categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
   });
 
-  // Top Countries - place IL first
-  const countriesWithoutIL = Object.entries(countryCounts)
-    .filter(([code]) => code !== 'IL')
+  // Top Countries - place IL and JP first, and ensure MX, PT and high-profile countries are always present
+  const priorityCodes = ['IL', 'JP', 'MX', 'PT'];
+  const remainingCountries = Object.entries(countryCounts)
+    .filter(([code]) => !priorityCodes.includes(code))
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 35);
+    .slice(0, 40);
 
-  const ilCount = countryCounts['IL'] || 0;
-  const sortedCountries = [['IL', ilCount], ...countriesWithoutIL];
+  const priorityList = priorityCodes
+    .filter(code => countryCounts[code])
+    .map(code => [code, countryCounts[code]]);
+
+  const sortedCountries = [...priorityList, ...remainingCountries];
 
   countriesFilterCountEl.textContent = sortedCountries.length;
 
   let countriesHTML = `
     <button class="filter-btn ${selectedCountry === 'IL' ? 'active' : ''}" data-country="IL">
       <span>🇮🇱 ישראל</span>
-      <span class="filter-badge">${ilCount}</span>
+      <span class="filter-badge">${countryCounts['IL'] || 0}</span>
+    </button>
+    <button class="filter-btn ${selectedCountry === 'JP' ? 'active' : ''}" data-country="JP">
+      <span>🇯🇵 יפן</span>
+      <span class="filter-badge">${countryCounts['JP'] || 0}</span>
     </button>
     <button class="filter-btn ${selectedCountry === 'ALL' ? 'active' : ''}" data-country="ALL">
       <span>🌐 כל המדינות</span>
@@ -799,6 +810,62 @@ function setupEventListeners() {
   theaterBtn.addEventListener('click', () => {
     playerPanel.classList.toggle('theater-mode');
   });
+
+  // Desktop Floating Mini-Player (PiP): shrinks to bottom-right when scrolling down, returns when at top
+  function handleDesktopPiPScroll() {
+    // Only activate PiP on desktop / laptop screens (width > 820px)
+    if (window.innerWidth <= 820) {
+      if (playerPanel.classList.contains('pip-mode')) {
+        playerPanel.classList.remove('pip-mode');
+        if (playerPipPlaceholder) playerPipPlaceholder.classList.remove('active');
+      }
+      return;
+    }
+
+    // Measure scroll distance inside browse-panel or window
+    const scrollPos = browsePanel ? browsePanel.scrollTop : (window.scrollY || document.documentElement.scrollTop);
+    const triggerThreshold = 180; // pixels scrolled before shrinking to bottom right
+
+    if (scrollPos > triggerThreshold) {
+      if (!playerPanel.classList.contains('pip-mode')) {
+        playerPanel.classList.add('pip-mode');
+        if (playerPipPlaceholder) playerPipPlaceholder.classList.add('active');
+      }
+    } else {
+      if (playerPanel.classList.contains('pip-mode')) {
+        playerPanel.classList.remove('pip-mode');
+        if (playerPipPlaceholder) playerPipPlaceholder.classList.remove('active');
+      }
+    }
+  }
+
+  // Restore player to top on click on placeholder or restore button
+  if (playerPipPlaceholder) {
+    playerPipPlaceholder.addEventListener('click', () => {
+      if (browsePanel) {
+        browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (pipRestoreBtn) {
+    pipRestoreBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (browsePanel) {
+        browsePanel.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (browsePanel) {
+    browsePanel.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
+  }
+  window.addEventListener('scroll', handleDesktopPiPScroll, { passive: true });
+  window.addEventListener('resize', handleDesktopPiPScroll, { passive: true });
 
   // Quick Countries Bar
   quickCountriesBar.addEventListener('click', (e) => {
