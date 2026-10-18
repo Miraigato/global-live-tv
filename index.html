@@ -67,6 +67,21 @@
     </div>
   </header>
 
+  <!-- Mixed Content / HTTPS Notice Banner -->
+  <div id="httpsWarningBanner" class="https-warning-banner" style="display:none;">
+    <div class="banner-content">
+      <span class="banner-icon">💡</span>
+      <span class="banner-text">
+        <strong>שים לב:</strong> האתר נפתח ב-HTTPS, ולכן הדפדפן חוסם שידורי וידאו ב-HTTP (כמו ערוץ 12, 13 וערוצי ספורט).
+        לפתיחת <strong>כל</strong> הערוצים ללא חסימות דפדפן:
+        <a id="switchToHttpLink" href="http://israel-global-tv.surge.sh" class="banner-btn">עבור לגרסת HTTP 🔓</a>
+        או פתח ברשת הביתית:
+        <a href="http://localhost:8080" class="banner-link">localhost:8080</a>
+      </span>
+    </div>
+    <button id="closeBannerBtn" class="banner-close" title="סגור הודעה">✕</button>
+  </div>
+
   <!-- Main Container -->
   <div class="main-layout">
     <!-- Right Sidebar (Filters) -->

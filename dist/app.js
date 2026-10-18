@@ -126,6 +126,25 @@ async function init() {
 
     gridLoading.style.display = 'none';
 
+    // HTTPS Mixed Content detection
+    if (window.location.protocol === 'https:') {
+      const banner = document.getElementById('httpsWarningBanner');
+      const closeBtn = document.getElementById('closeBannerBtn');
+      const switchToHttpLink = document.getElementById('switchToHttpLink');
+      if (banner && !sessionStorage.getItem('dismiss_https_banner')) {
+        banner.style.display = 'flex';
+        if (switchToHttpLink) {
+          switchToHttpLink.href = 'http://' + window.location.host + window.location.pathname;
+        }
+        if (closeBtn) {
+          closeBtn.addEventListener('click', () => {
+            banner.style.display = 'none';
+            sessionStorage.setItem('dismiss_https_banner', '1');
+          });
+        }
+      }
+    }
+
     buildSidebarFilters();
     applyFilters();
 
@@ -477,6 +496,7 @@ function renderGrid() {
         <div class="card-details">
           <span>${channel.flag || '🌐'} ${channel.country || ''}</span>
           ${channel.category ? `<span class="card-tag">${channel.category}</span>` : ''}
+          ${window.location.protocol === 'https:' && channel.url.startsWith('http://') ? `<span class="proto-tag" title="שידור HTTP - זמין בגרסת HTTP">HTTP</span>` : ''}
         </div>
         ${isDead ? `<span class="offline-pill" title="ערוץ לא זמין / לא פעיל">לא פעיל</span>` : ''}
       </div>
@@ -581,8 +601,13 @@ function playStreamSource(streamUrl, successMsg, channelObj = null) {
       if (data.fatal) {
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
-            setStreamStatus('error', 'שגיאת רשת / הזרמה מוגנת');
-            if (channelObj) markChannelDead(channelObj);
+            if (window.location.protocol === 'https:' && streamUrl.startsWith('http://')) {
+              setStreamStatus('error', 'נחסם ע"י הדפדפן (שידור ב-HTTP)');
+              showToast('⚠️ ערוץ ב-HTTP: עבור לגרסת http://israel-global-tv.surge.sh כדי לצפות');
+            } else {
+              setStreamStatus('error', 'שגיאת רשת / הזרמה מוגנת');
+              if (channelObj) markChannelDead(channelObj);
+            }
             hlsInstance.startLoad();
             break;
           case Hls.ErrorTypes.MEDIA_ERROR:
