@@ -1,0 +1,2121 @@
+[
+  {
+    "id": "vod-givat-halfon",
+    "title": "גבעת חלפון אינה עונה",
+    "type": "movie",
+    "category": "סרטי פולחן",
+    "year": "1976",
+    "duration": "90 דקות",
+    "cast": "שייקה לוי, ישראל פוליאקוב, גברי בנאי, טוביה צפיר, מיקי קם, ניצה שאול",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/d/d4/Givat_Halfon_poster.jpg/400px-Givat_Halfon_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/d/d4/Givat_Halfon_poster.jpg/640px-Givat_Halfon_poster.jpg",
+    "description": "קומדיית הפולחן הצבאית הגדולה בכל הזמנים בבימויו של אסי דיין ובכיכובם של שלישיית הגשש החיוור במוצב בסיני.",
+    "streamUrl": "https://archive.org/download/GIVATHALFON/GIVAT%20HALFON.mp4"
+  },
+  {
+    "id": "vod-snooker",
+    "title": "חגיגה בסנוקר",
+    "type": "movie",
+    "category": "סרטי בורקס",
+    "year": "1975",
+    "duration": "95 דקות",
+    "cast": "יהודה ברקן, זאב רווח, יוסף שילוח, טוביה צפיר, ניצה שאול",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/9/93/Hagiga_BeSnooker_poster.jpg/400px-Hagiga_BeSnooker_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/9/93/Hagiga_BeSnooker_poster.jpg/640px-Hagiga_BeSnooker_poster.jpg",
+    "description": "קומדיית הבורקס המיתולוגית של בועז דוידזון על חנצ'ה, גבריאל ועזריאל, וההסתבכות הגדולה מול סלבדור סביב שולחן הסנוקר.",
+    "streamUrl": "https://archive.org/download/720p-hdtv-1975/720p%20HDTV%201975%20%D7%96%D7%99%D7%A8%D7%94%20%D7%9E%D7%93%D7%99%D7%94%20%D7%97%D7%92%D7%99%D7%92%D7%94%20%D7%91%D7%A1%D7%A0%D7%95%D7%A7%D7%A8.mp4"
+  },
+  {
+    "id": "vod-charlie",
+    "title": "צ'רלי וחצי",
+    "type": "movie",
+    "category": "סרטי בורקס",
+    "year": "1974",
+    "duration": "98 דקות",
+    "cast": "יהודה ברקן, זאב רווח, משה איש כסית, אריה אליאס, חיה קציר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/2/22/Charlie_VeChetzi.jpg/400px-Charlie_VeChetzi.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/2/22/Charlie_VeChetzi.jpg/640px-Charlie_VeChetzi.jpg",
+    "description": "הקומדיה האהובה על צ'רלי הרמאי הקטן, מיקו חברו הצעיר, וסיפור האהבה הבלתי צפוי עם גילה בת העשירים.",
+    "streamUrl": "https://archive.org/download/CHARLIVAHAZIXVIDAC35.1/CHARLI%20VA%20HAZI%20XVID%20AC3%205.1.mp4"
+  },
+  {
+    "id": "vod-abba-ganov-1",
+    "title": "אבא גנוב 1",
+    "type": "movie",
+    "category": "דרמה / קומדיה",
+    "year": "1989",
+    "duration": "90 דקות",
+    "cast": "יהודה ברקן, אלונה קמחי, בן ציון, אריה מוסקונה, קרן מור",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/7/70/Abba_Ganuv_Poster.jpg/400px-Abba_Ganuv_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/7/70/Abba_Ganuv_Poster.jpg/640px-Abba_Ganuv_Poster.jpg",
+    "description": "דרמת הלהיט הישראלית על צ'יקו בן דוד, דייג טברייני הנאבק על משמורת בנו בן מול עורכת הדין של האם.",
+    "streamUrl": "https://archive.org/download/vod_outlook_1/%D7%90%D7%91%D7%90%20%D7%92%D7%A0%D7%95%D7%91%201.mp4"
+  },
+  {
+    "id": "vod-abba-ganov-2",
+    "title": "אבא גנוב 2",
+    "type": "movie",
+    "category": "דרמה / קומדיה",
+    "year": "1989",
+    "duration": "92 דקות",
+    "cast": "יהודה ברקן, בן ציון, אורי שמיר, ג'קי מקייטן",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/9/98/Abba_Ganuv_2_Poster.jpg/400px-Abba_Ganuv_2_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/9/98/Abba_Ganuv_2_Poster.jpg/640px-Abba_Ganuv_2_Poster.jpg",
+    "description": "המשך הרפתקאותיהם של צ'יקו ובנו בן בטבריה, במאבקם להישאר יחד מול אתגרי החיים ורווחת הילד.",
+    "streamUrl": "https://archive.org/download/ABBAGANOV2XVIDAC35.1/ABBA%20GANOV%202%20XVID%20AC3%205.1.mp4"
+  },
+  {
+    "id": "vod-eskimo-limon-1",
+    "title": "אסקימו לימון",
+    "type": "movie",
+    "category": "סרטי פולחן",
+    "year": "1978",
+    "duration": "100 דקות",
+    "cast": "יפתח קצור, צחי נוי, יונתן סגל, ענת עצמון, דבורה בקון",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Eskimo_Limon_poster.jpg/400px-Eskimo_Limon_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Eskimo_Limon_poster.jpg/640px-Eskimo_Limon_poster.jpg",
+    "description": "סרט הנעורים הישראלי המצליח ביותר בכל הזמנים: בנצי, מומו ויודל'ה מתבגרים בתל אביב של שנות ה-50 לצלילי הרוקנרול.",
+    "streamUrl": "https://archive.org/download/000529-lemon-popsicle/Lemon%20Popsicle%20-%20%D7%90%D7%A1%D7%A7%D7%99%D7%9E%D7%95%20%D7%9C%D7%99%D7%9E%D7%95%D7%9F.mp4"
+  },
+  {
+    "id": "vod-eskimo-limon-8",
+    "title": "אסקימו לימון 8 (בלוז לקיץ)",
+    "type": "movie",
+    "category": "סרטי פולחן",
+    "year": "1988",
+    "duration": "90 דקות",
+    "cast": "יפתח קצור, צחי נוי, יונתן סגל, זוהר ליבא",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/3/30/Summertime_Blues_film_poster.jpg/400px-Summertime_Blues_film_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/3/30/Summertime_Blues_film_poster.jpg/640px-Summertime_Blues_film_poster.jpg",
+    "description": "החלק השמיני בסדרת אסקימו לימון: השלישייה בקיץ סוער ומלא הרפתקאות רומנטיות ומצחיקות.",
+    "streamUrl": "https://archive.org/download/ASKEMOLIMON8XVID/ASKEMO%20LIMON%208%20XVID.mp4"
+  },
+  {
+    "id": "vod-tipat-mazal",
+    "title": "טיפת מזל",
+    "type": "movie",
+    "category": "סרטי בורקס / דרמה",
+    "year": "1992",
+    "duration": "95 דקות",
+    "cast": "זהבה בן, זאב רווח, אריה מוסקונה, גאולה נוני",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Tipat_Mazal_Poster.jpg/400px-Tipat_Mazal_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Tipat_Mazal_Poster.jpg/640px-Tipat_Mazal_Poster.jpg",
+    "description": "סרטו המרגש של זאב רווח בכיכובה של זהבה בן, על זמר עבר ממרוקו ובתו המוכשרת הנאבקים על פרנסתם וחלומותיהם בישראל.",
+    "streamUrl": "https://archive.org/download/TIPATMAZALVHSXVID/TIPAT%20MAZAL%20VHS%20XVID%20.mp4"
+  },
+  {
+    "id": "vod-metahat-laaf",
+    "title": "מתחת לאף",
+    "type": "movie",
+    "category": "מתח ופשע ישראלי",
+    "year": "1982",
+    "duration": "102 דקות",
+    "cast": "אורי גבריאל, משה איבגי, צדוק צפיר, מכרם ח'ורי",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/3/36/Mitahat_LaAf_Poster.jpg/400px-Mitahat_LaAf_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/3/36/Mitahat_LaAf_Poster.jpg/640px-Mitahat_LaAf_Poster.jpg",
+    "description": "קלאסיקת הפשע הישראלית של ינקול גולדווסר: ארבעה עבריינים קטנים מחליטים לשדוד את הכספת של משטרת ישראל.",
+    "streamUrl": "https://archive.org/download/METAHATLAAFVHSXIVDAC35.1/METAHAT%20LA%20AF%20VHS%20XIVD%20AC3%205.1.mp4"
+  },
+  {
+    "id": "vod-dizengoff-99",
+    "title": "דיזנגוף 99",
+    "type": "movie",
+    "category": "סרטי פולחן",
+    "year": "1979",
+    "duration": "91 דקות",
+    "cast": "גידי גוב, ענת עצמון, מאיר סוויסה, חלי גולדנברג",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Dizengoff_99_poster.jpg/400px-Dizengoff_99_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Dizengoff_99_poster.jpg/640px-Dizengoff_99_poster.jpg",
+    "description": "סרט הפולחן של אבי נשר על שלושה צעירים השוכרים דירה ברחוב דיזנגוף בתל אביב ומנסים למצוא את דרכם בעולם הפרסום והקולנוע.",
+    "streamUrl": "https://archive.org/download/DAZINGIF99XVIDVHS/DAZINGIF%2099%20XVID%20VHS.mp4"
+  },
+  {
+    "id": "vod-hatahaka",
+    "title": "הלהקה",
+    "type": "movie",
+    "category": "קלאסיקה / מוזיקה",
+    "year": "1978",
+    "duration": "100 דקות",
+    "cast": "גידי גוב, ששי קשת, גלי עטרי, דובל'ה גליקמן, טוביה צפיר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/0/00/HaLahaka_Poster.jpg/400px-HaLahaka_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/0/00/HaLahaka_Poster.jpg/640px-HaLahaka_Poster.jpg",
+    "description": "יצירת המופת המוזיקלית של אבי נשר על הווי להקה צבאית בשנת 1968, היריבויות, האהבות והשירים שנכנסו לנצח.",
+    "streamUrl": "https://archive.org/download/HALAHAKAXVIDAC35.1/HA%20LAHAKA%20XVID%20AC3%205.1.mp4"
+  },
+  {
+    "id": "vod-sof-haolam-smola",
+    "title": "סוף העולם שמאלה",
+    "type": "movie",
+    "category": "דרמה / קומדיה",
+    "year": "2004",
+    "duration": "110 דקות",
+    "cast": "לירז צ'רכי, נטע גרטי, רותם אבוהב, ישראל קטורזה, מריאנו אידלמן",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a3/Turn_Left_at_the_End_of_the_World_poster.jpg/400px-Turn_Left_at_the_End_of_the_World_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a3/Turn_Left_at_the_End_of_the_World_poster.jpg/640px-Turn_Left_at_the_End_of_the_World_poster.jpg",
+    "description": "סרטו המצליח של אבי נשר על עיירת עולים מבודדת בנגב בשנות ה-60 והמפגש התרבותי בין משפחה הודית למשפחה מרוקאית.",
+    "streamUrl": "https://archive.org/download/SOFHAOLAMSMOLAHEBXIVDAC35.1/SOF%20HAOLAM%20SMOLA%20HEB%20XIVD%20AC3%205.1.mp4"
+  },
+  {
+    "id": "vod-leshahrer-et-shuli",
+    "title": "לשחרר את שולי",
+    "type": "movie",
+    "category": "קומדיה",
+    "year": "2021",
+    "duration": "100 דקות",
+    "cast": "שלום מיכאלשווילי, אסי ישראלוף, ציון ברוך, אביבה נגוסה",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/1/11/Leshahrer_Et_Shuli_Poster.jpg/400px-Leshahrer_Et_Shuli_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/1/11/Leshahrer_Et_Shuli_Poster.jpg/640px-Leshahrer_Et_Shuli_Poster.jpg",
+    "description": "שלישיית מה קשור בשובר הקופות הענק: שלושה ישראלים טסים לקולומביה להציל את הבן שולי שנחטף על ידי קרטל סמים.",
+    "streamUrl": "https://archive.org/download/20230505_20230505_1120/%D7%9C%D7%A9%D7%97%D7%A8%D7%A8%20%D7%90%D7%AA%20%D7%A9%D7%95%D7%9C%D7%99.mp4"
+  },
+  {
+    "id": "vod-lost-islands",
+    "title": "איים אבודים (Lost Islands)",
+    "type": "movie",
+    "category": "דרמה / קומדיה",
+    "year": "2008",
+    "duration": "105 דקות",
+    "cast": "מיכאל מושונוב, עוז זהבי, שמיל בן ארי, אוסנת פישמן",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Lost_Islands_poster.jpg/400px-Lost_Islands_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Lost_Islands_poster.jpg/640px-Lost_Islands_poster.jpg",
+    "description": "סרטו עטור השבחים של רשף לוי על משפחה מרובת ילדים בשנות ה-80 בכפר סבא וגורלם המשתנה של האחים התאומים.",
+    "streamUrl": "https://archive.org/download/Lost.Island.Israeli.Movie.2008.DVDRip.Xvid/Lost.Island.Israeli.Movie.2008.DVDRip.Xvid.mp4"
+  },
+  {
+    "id": "vod-mivtza-savta",
+    "title": "מבצע סבתא",
+    "type": "movie",
+    "category": "סרטי פולחן",
+    "year": "1999",
+    "duration": "50 דקות",
+    "cast": "רמי הויברגר, צחי גראד, עמי סמולרצ'יק, רוז מסינגר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/8/87/Mivtza_Savta_poster.jpg/400px-Mivtza_Savta_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/8/87/Mivtza_Savta_poster.jpg/640px-Mivtza_Savta_poster.jpg",
+    "description": "\"התחלת הכי מהר שלך ולאט לאט תגביר\" - קומדיית הפולחן הקורעת של דרור שאול על שלושת האחים בקיבוץ המנסים לקבור את סבתם.",
+    "streamUrl": "https://archive.org/download/GIVATHALFON/GIVAT%20HALFON.mp4"
+  },
+  {
+    "id": "vod-alex-love",
+    "title": "אלכס חולה אהבה",
+    "type": "movie",
+    "category": "סרטי פולחן",
+    "year": "1986",
+    "duration": "90 דקות",
+    "cast": "איתן אנשל, שרון הכהן, אורי כבירי, יוסף שילוח",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Alex_Hole_Ahava.jpg/400px-Alex_Hole_Ahava.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/6/67/Alex_Hole_Ahava.jpg/640px-Alex_Hole_Ahava.jpg",
+    "description": "\"בחורות ערומים זה כולירע\" - קומדיית ההתבגרות התל-אביבית של שנות ה-50 וההתאהבות של אלכס בבת דודתו לולה מפולין.",
+    "streamUrl": "https://archive.org/download/CHARLIVAHAZIXVIDAC35.1/CHARLI%20VA%20HAZI%20XVID%20AC3%205.1.mp4"
+  },
+  {
+    "id": "vod-sallah",
+    "title": "סאלח שבתי",
+    "type": "movie",
+    "category": "קלאסיקה",
+    "year": "1964",
+    "duration": "110 דקות",
+    "cast": "חיים טופול, גאולה נוני, אריק איינשטיין, גילה אלמגור",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/b/b3/Sallah_Shabati_poster.jpg/400px-Sallah_Shabati_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/b/b3/Sallah_Shabati_poster.jpg/640px-Sallah_Shabati_poster.jpg",
+    "description": "יצירת המופת של אפרים קישון שהייתה מועמדת לפרס האוסקר וזכתה בגלובוס הזהב, על קשיי העלייה והמעברה בראשית המדינה.",
+    "streamUrl": "https://archive.org/download/sallah_shabati/Sallah.Shabati.1964.DVDRip.x264-HANDJOB.mp4"
+  },
+  {
+    "id": "vod-kazablan",
+    "title": "קזבלן",
+    "type": "movie",
+    "category": "מחזמר / קלאסיקה",
+    "year": "1973",
+    "duration": "122 דקות",
+    "cast": "יהורם גאון, אפרת לביא, אריה אליאס, יהודה אפרוני",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/c/c5/Kazablan_Poster.jpg/400px-Kazablan_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/c/c5/Kazablan_Poster.jpg/640px-Kazablan_Poster.jpg",
+    "description": "המחזמר הלאומי המרגש של מנחם גולן בכיכובו של יהורם גאון: סיפורו של יוצא יחידת 101 החי ביפו ומנהיג את המאבק על שכונתו.",
+    "streamUrl": "https://archive.org/download/KAZBLANVHSXVID/KAZBLAN%20VHS%20XVID.mp4"
+  },
+  {
+    "id": "vod-hashoter-azulai",
+    "title": "השוטר אזולאי",
+    "type": "movie",
+    "category": "קלאסיקה",
+    "year": "1971",
+    "duration": "87 דקות",
+    "cast": "שייקה אופיר, זהרירה חריפאי, יוסף שילוח, אבנר חזקיהו",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/0/07/Hashoter_Azulai_poster.jpg/400px-Hashoter_Azulai_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/0/07/Hashoter_Azulai_poster.jpg/640px-Hashoter_Azulai_poster.jpg",
+    "description": "תפקיד חייו של שייקה אופיר כשוטר רחום וטוב לב ביפו שמתקשה לתפוס פושעים אך כובש את לב כולם. זוכה פרס גלובוס הזהב.",
+    "streamUrl": "https://archive.org/download/HASHOTERAZULAIXVIDMP3/HA%20SHOTER%20AZULAI%20XVID%20MP3.mp4"
+  },
+  {
+    "id": "vod-kuni-lemel-1",
+    "title": "שני קוני למל",
+    "type": "movie",
+    "category": "קלאסיקה",
+    "year": "1966",
+    "duration": "90 דקות",
+    "cast": "מייק בורשטיין, רפאל קלצ'קין, אהרון מסקין, שמואל רודנסקי",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a2/Shnei_Kuni_Lemel_poster.jpg/400px-Shnei_Kuni_Lemel_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a2/Shnei_Kuni_Lemel_poster.jpg/640px-Shnei_Kuni_Lemel_poster.jpg",
+    "description": "סרט המוזיקה הקלאסי בכיכובו של מייק בורשטיין בתפקיד כפול: קוני למל המגמגם ובן דודו המשכיל מקס.",
+    "streamUrl": "https://archive.org/download/kuni-lemel/Shnei%20Kuni%20Lemel.mp4"
+  },
+  {
+    "id": "vod-kuni-lemel-2",
+    "title": "קוני למל בתל אביב",
+    "type": "movie",
+    "category": "קומדיה",
+    "year": "1976",
+    "duration": "88 דקות",
+    "cast": "מייק בורשטיין, זאב רווח, מנדי רייס-דייוויס",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/3/36/Kuni_Lemel_Tel_Aviv_Poster.jpg/400px-Kuni_Lemel_Tel_Aviv_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/3/36/Kuni_Lemel_Tel_Aviv_Poster.jpg/640px-Kuni_Lemel_Tel_Aviv_Poster.jpg",
+    "description": "קוני למל מגיע לתל אביב התוססת של שנות ה-70 ומסתבך בסדרת אי-הבנות קורעות מצחוק.",
+    "streamUrl": "https://archive.org/download/kuni-lemel/Kuni_Lemel_in_Tel_Aviv.mp4"
+  },
+  {
+    "id": "vod-kuni-lemel-3",
+    "title": "קוני למל בקהיר",
+    "type": "movie",
+    "category": "קומדיה",
+    "year": "1983",
+    "duration": "95 דקות",
+    "cast": "מייק בורשטיין, חנה לסלאו, אורי שמיר, יוסף שילוח",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/4/4b/Kuni_Lemel_Cairo_poster.jpg/400px-Kuni_Lemel_Cairo_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/4/4b/Kuni_Lemel_Cairo_poster.jpg/640px-Kuni_Lemel_Cairo_poster.jpg",
+    "description": "חלק שלישי בטרילוגיה האהובה: קוני למל נקלע לקהיר בעקבות הסכם השלום ומוצא עצמו במרדף ריגול משעשע.",
+    "streamUrl": "https://archive.org/download/kuni-lemel/Kuni_Lemel_in_Cairo.mp4"
+  },
+  {
+    "id": "vod-parpar-nehmad",
+    "title": "בוא אלי פרפר נחמד",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "1995",
+    "duration": "60 דקות",
+    "cast": "עוזי חיטמן, עפרה ויינגרטן, אפי בן ישראל, שבי, נולי, פינגי, אוזה",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1b/Parpar_Nehmad_Logo.jpg/400px-Parpar_Nehmad_Logo.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1b/Parpar_Nehmad_Logo.jpg/640px-Parpar_Nehmad_Logo.jpg",
+    "description": "קלטת הילדים האגדית של הטלוויזיה החינוכית עם כל השירים והבובות שגדלנו עליהם: שבי השבלול, נולי האפרוחית, ואוזה האווזה.",
+    "streamUrl": "https://archive.org/download/parpar-nehmad/PARPAR_NEHMAD.mp4"
+  },
+  {
+    "id": "vod-dig-dig-dug",
+    "title": "דיג דיג דוג (הקלטת המקורית)",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "1992",
+    "duration": "50 דקות",
+    "cast": "דליק ווליניץ, שרון צור, נורית הירש",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/0/01/Dig_Dig_Dog_Poster.jpg/400px-Dig_Dig_Dog_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/0/01/Dig_Dig_Dog_Poster.jpg/640px-Dig_Dig_Dog_Poster.jpg",
+    "description": "קלטת הילדים המהפכנית שכבשה את ישראל עם שירי המשחק וההפעלה לפעוטות מאת מיכל חזון ונורית הירש.",
+    "streamUrl": "https://archive.org/download/dig-dig-dug/%D7%93%D7%99%D7%92%20%D7%93%D7%99%D7%92%20%D7%93%D7%95%D7%92%201.mp4"
+  },
+  {
+    "id": "vod-100-first-songs-1",
+    "title": "מאה שירים ראשונים - חלק א'",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "1992",
+    "duration": "55 דקות",
+    "cast": "ציפי שביט, נתן דטנר, חני נחמיאס",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/100_First_Songs_Poster.jpg/400px-100_First_Songs_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/100_First_Songs_Poster.jpg/640px-100_First_Songs_Poster.jpg",
+    "description": "הקלטת המיתולוגית המבוססת על ספר הילדים הנמכר ביותר בישראל: מיטב שירי הילדות של כל הזמנים בעיבודים קלאסיים.",
+    "streamUrl": "https://archive.org/download/100-first-songs-pt-1/%D7%9E%D7%90%D7%94%20%D7%A9%D7%99%D7%A8%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%9D%20-%20%D7%97%D7%9C%D7%A7%20%D7%90%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+  },
+  {
+    "id": "vod-100-first-songs-2",
+    "title": "מאה שירים ראשונים - חלק ב'",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "1993",
+    "duration": "52 דקות",
+    "cast": "ציפי שביט, נתן דטנר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/100_First_Songs_Poster.jpg/400px-100_First_Songs_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/100_First_Songs_Poster.jpg/640px-100_First_Songs_Poster.jpg",
+    "description": "החלק השני של יצירת המופת לילדים: מחרוזות שירים, משחקי ילדות וחגיגה מוזיקלית בהשתתפות ילדים ורקדנים.",
+    "streamUrl": "https://archive.org/download/100-first-songs-pt-2/%D7%9E%D7%90%D7%94%20%D7%A9%D7%99%D7%A8%D7%99%D7%9D%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%99%D7%9D%20-%20%D7%97%D7%9C%D7%A7%20%D7%91.mp4"
+  },
+  {
+    "id": "vod-uzi-hitman-yeledish",
+    "title": "עוזי חיטמן - ילדיש",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "1995",
+    "duration": "48 דקות",
+    "cast": "עוזי חיטמן ולהקת ילדים",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/7/7b/Uzi_Hitman.jpg/400px-Uzi_Hitman.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/7/7b/Uzi_Hitman.jpg/640px-Uzi_Hitman.jpg",
+    "description": "היוצר האגדי עוזי חיטמן בקלטת שירי ילדים קסומה עם השירים האהובים: 'נולדתי לשלום', 'רציתי שתדע', 'הילד בן שלושים' ועוד.",
+    "streamUrl": "https://archive.org/download/Yeledish/%D7%A2%D7%95%D7%96%D7%99%20%D7%97%D7%99%D7%98%D7%9E%D7%9F%20%D7%99%D7%9C%D7%93%D7%99%D7%A9.mp4"
+  },
+  {
+    "id": "vod-pim-pam-po-2",
+    "title": "פים פם פה 2 (בארמון הקסמים)",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "2002",
+    "duration": "55 דקות",
+    "cast": "סופי צדקה, טוביה צפיר, זיו מאיר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/9/9f/Pim_Pam_Po_Poster.jpg/400px-Pim_Pam_Po_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/9/9f/Pim_Pam_Po_Poster.jpg/640px-Pim_Pam_Po_Poster.jpg",
+    "description": "סופי צדקה והענק פים פם באגדת ילדים מוזיקלית קסומה המבוססת על שירי הילדים הקלאסיים של דיתה עפרים ואילנה לופט.",
+    "streamUrl": "https://archive.org/download/PIM-PAM-PO-2/PIMPAM2.mp4"
+  },
+  {
+    "id": "vod-tif-ve-taf-2",
+    "title": "טיף וטף 2",
+    "type": "movie",
+    "category": "שירי ילדים ונוסטלגיה",
+    "year": "2000",
+    "duration": "50 דקות",
+    "cast": "אורנה ומשה דץ, סמדר שיר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a4/Tif_Vet_Taf_Poster.jpg/400px-Tif_Vet_Taf_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a4/Tif_Vet_Taf_Poster.jpg/640px-Tif_Vet_Taf_Poster.jpg",
+    "description": "הצמד המצליח אורנה ומשה דץ בשירי פעוטות אהובים שנכתבו על ידי סמדר שיר: 'איזה יום שמח', 'טיף וטף' ועוד.",
+    "streamUrl": "https://archive.org/download/TifVeTaf2/%D7%98%D7%99%D7%A3%20%D7%95%D7%98%D7%A3%202%20%28%D7%90%D7%95%D7%A8%D7%A0%D7%94%20%D7%95%D7%9E%D7%A9%D7%94%20%D7%93%D7%A5%29.mp4"
+  },
+  {
+    "id": "vod-michal-haktana",
+    "title": "מיכל הקטנה בממלכת האהבה",
+    "type": "movie",
+    "category": "הצגות ילדים",
+    "year": "2012",
+    "duration": "75 דקות",
+    "cast": "מיכל הקטנה (מיכל ויצמן), שחקנים ורקדנים",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1b/Michal_Haktana_Poster.jpg/400px-Michal_Haktana_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1b/Michal_Haktana_Poster.jpg/640px-Michal_Haktana_Poster.jpg",
+    "description": "ההצגה המלאה והמרהיבה של כוכבת הילדים מיכל הקטנה במסעה הקסום להחזיר את האהבה והחיוך לממלכה.",
+    "streamUrl": "https://archive.org/download/little-michal-in-the/%D7%9E%D7%99%D7%9B%D7%9C%20%D7%94%D7%A7%D7%98%D7%A0%D7%94%20%D7%91%D7%9E%D7%9E%D7%9C%D7%9B%D7%AA%20%D7%94%D7%90%D7%94%D7%91%D7%94%20-%20%D7%94%D7%94%D7%A6%D7%92%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+  },
+  {
+    "id": "vod-kupa-rashit",
+    "title": "קופה ראשית",
+    "type": "series",
+    "category": "סדרות קומדיה",
+    "year": "2018-2024",
+    "seasons": "4 עונות",
+    "cast": "קרן מור, דב נבון, יניב סוויסה, אמיר שורוש, נועה קולר, דניאל סטיופין, יגאל עדיקא",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/5/52/Kupa_Rashit_Poster.jpg/400px-Kupa_Rashit_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/f/fd/Kupa_Rashit2.png",
+    "description": "סדרת המופת הקומית המתרחשת בסניף \"שפע יששכר\" ביבנה, ועוקבת אחר עובדי הסופרמרקט והלקוחות הישראלים בניהולה של שירה שטיינבוך.",
+    "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E1.mp4",
+    "episodes": [
+      {
+        "id": "kupa-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: יום הולדת לשירה",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E1.mp4"
+      },
+      {
+        "id": "kupa-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: הקופאי המצטיין",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E2.mp4"
+      },
+      {
+        "id": "kupa-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: תחרות מכירות",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E3.mp4"
+      },
+      {
+        "id": "kupa-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: הטועם הראשי",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E4.mp4"
+      },
+      {
+        "id": "kupa-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: יום אהבה בשפע יששכר",
+        "duration": "26 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E5.mp4"
+      },
+      {
+        "id": "kupa-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: המצלמות הנסתרות",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E6.mp4"
+      },
+      {
+        "id": "kupa-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "פרק 7: השביתה הגדולה",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E7.mp4"
+      },
+      {
+        "id": "kupa-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "פרק 8: לקוח VIP",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E8.mp4"
+      },
+      {
+        "id": "kupa-s1-e9",
+        "season": 1,
+        "number": 9,
+        "title": "פרק 9: ראמזי יוצא לחופשה",
+        "duration": "27 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E9.mp4"
+      },
+      {
+        "id": "kupa-s1-e10",
+        "season": 1,
+        "number": 10,
+        "title": "פרק 10: העובד המסתורי",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E10.mp4"
+      },
+      {
+        "id": "kupa-s1-e11",
+        "season": 1,
+        "number": 11,
+        "title": "פרק 11: כוכב בשר",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E11.mp4"
+      },
+      {
+        "id": "kupa-s1-e12",
+        "season": 1,
+        "number": 12,
+        "title": "פרק 12: המבצע הגדול",
+        "duration": "26 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E12.mp4"
+      },
+      {
+        "id": "kupa-s1-e13",
+        "season": 1,
+        "number": 13,
+        "title": "פרק 13: ביקורת פתע",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E13.mp4"
+      },
+      {
+        "id": "kupa-s1-e14",
+        "season": 1,
+        "number": 14,
+        "title": "פרק 14: שיגעון העגבניות",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E14.mp4"
+      },
+      {
+        "id": "kupa-s1-e15",
+        "season": 1,
+        "number": 15,
+        "title": "פרק 15: כוכבת רשת בסניף",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E15.mp4"
+      },
+      {
+        "id": "kupa-s1-e16",
+        "season": 1,
+        "number": 16,
+        "title": "פרק 16: ספירת מלאי לילית",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E16.mp4"
+      },
+      {
+        "id": "kupa-s1-e17",
+        "season": 1,
+        "number": 17,
+        "title": "פרק 17: מועדון לקוחות זהב",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E17.mp4"
+      },
+      {
+        "id": "kupa-s1-e18",
+        "season": 1,
+        "number": 18,
+        "title": "פרק 18: הקרב על המעדנייה",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E18.mp4"
+      },
+      {
+        "id": "kupa-s1-e19",
+        "season": 1,
+        "number": 19,
+        "title": "פרק 19: יום גיבוש עובדים",
+        "duration": "26 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E19.mp4"
+      },
+      {
+        "id": "kupa-s1-e20",
+        "season": 1,
+        "number": 20,
+        "title": "פרק 20: התקלה במזגן",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E20.mp4"
+      },
+      {
+        "id": "kupa-s1-e21",
+        "season": 1,
+        "number": 21,
+        "title": "פרק 21: חופה ראשית - סיום עונה 1",
+        "duration": "28 דק'",
+        "streamUrl": "https://archive.org/download/s-1-e-15_202309/S1E21.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-asfur",
+    "title": "עספור (Asfur)",
+    "type": "series",
+    "category": "דרמה קומית",
+    "year": "2010-2011",
+    "seasons": "2 עונות",
+    "cast": "שלום מיכאלשווילי, עוז זהבי, גיא עמיר, חנן סביון, דן שפירא, אפרת דור, אביב אלוש",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/2/25/Asfur_title.jpg/400px-Asfur_title.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/d/d4/ASFUR.jpg",
+    "description": "סדרת הקאלט הירושלמית של גיא עמיר וחנן סביון: מוטי, איציק, קצר וניוטון מתגוררים באוטובוסים נטושים בשטח יקר בירושלים ונאבקים להשיג כסף להצלת אדמתם.",
+    "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E01.mp4",
+    "episodes": [
+      {
+        "id": "asfur-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "עונה 1 פרק 1",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E01.mp4"
+      },
+      {
+        "id": "asfur-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "עונה 1 פרק 2",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E02.mp4"
+      },
+      {
+        "id": "asfur-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "עונה 1 פרק 3",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E03.mp4"
+      },
+      {
+        "id": "asfur-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "עונה 1 פרק 4",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E04.mp4"
+      },
+      {
+        "id": "asfur-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "עונה 1 פרק 5",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E05.mp4"
+      },
+      {
+        "id": "asfur-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "עונה 1 פרק 6",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E06.mp4"
+      },
+      {
+        "id": "asfur-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "עונה 1 פרק 7",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E07.mp4"
+      },
+      {
+        "id": "asfur-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "עונה 1 פרק 8",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E08.mp4"
+      },
+      {
+        "id": "asfur-s1-e9",
+        "season": 1,
+        "number": 9,
+        "title": "עונה 1 פרק 9",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E09.mp4"
+      },
+      {
+        "id": "asfur-s1-e10",
+        "season": 1,
+        "number": 10,
+        "title": "עונה 1 פרק 10",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E10.mp4"
+      },
+      {
+        "id": "asfur-s1-e11",
+        "season": 1,
+        "number": 11,
+        "title": "עונה 1 פרק 11",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E11.mp4"
+      },
+      {
+        "id": "asfur-s1-e12",
+        "season": 1,
+        "number": 12,
+        "title": "עונה 1 פרק 12",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E12.mp4"
+      },
+      {
+        "id": "asfur-s1-e13",
+        "season": 1,
+        "number": 13,
+        "title": "עונה 1 פרק 13",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E13.mp4"
+      },
+      {
+        "id": "asfur-s1-e14",
+        "season": 1,
+        "number": 14,
+        "title": "עונה 1 פרק 14",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E14.mp4"
+      },
+      {
+        "id": "asfur-s1-e15",
+        "season": 1,
+        "number": 15,
+        "title": "עונה 1 פרק 15",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E15.mp4"
+      },
+      {
+        "id": "asfur-s1-e16",
+        "season": 1,
+        "number": 16,
+        "title": "עונה 1 פרק 16",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E16.mp4"
+      },
+      {
+        "id": "asfur-s1-e17",
+        "season": 1,
+        "number": 17,
+        "title": "עונה 1 פרק 17",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E17.mp4"
+      },
+      {
+        "id": "asfur-s1-e18",
+        "season": 1,
+        "number": 18,
+        "title": "עונה 1 פרק 18",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E18.mp4"
+      },
+      {
+        "id": "asfur-s1-e19",
+        "season": 1,
+        "number": 19,
+        "title": "עונה 1 פרק 19",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E19.mp4"
+      },
+      {
+        "id": "asfur-s1-e20",
+        "season": 1,
+        "number": 20,
+        "title": "עונה 1 פרק 20",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E20.mp4"
+      },
+      {
+        "id": "asfur-s1-e21",
+        "season": 1,
+        "number": 21,
+        "title": "עונה 1 פרק 21",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E21.mp4"
+      },
+      {
+        "id": "asfur-s1-e22",
+        "season": 1,
+        "number": 22,
+        "title": "עונה 1 פרק 22",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E22.mp4"
+      },
+      {
+        "id": "asfur-s1-e23",
+        "season": 1,
+        "number": 23,
+        "title": "עונה 1 פרק 23",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E23.mp4"
+      },
+      {
+        "id": "asfur-s1-e24",
+        "season": 1,
+        "number": 24,
+        "title": "עונה 1 פרק 24",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E24.mp4"
+      },
+      {
+        "id": "asfur-s1-e25",
+        "season": 1,
+        "number": 25,
+        "title": "עונה 1 פרק 25",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E25.mp4"
+      },
+      {
+        "id": "asfur-s1-e26",
+        "season": 1,
+        "number": 26,
+        "title": "עונה 1 פרק 26",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E26.mp4"
+      },
+      {
+        "id": "asfur-s1-e27",
+        "season": 1,
+        "number": 27,
+        "title": "עונה 1 פרק 27",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E27.mp4"
+      },
+      {
+        "id": "asfur-s1-e28",
+        "season": 1,
+        "number": 28,
+        "title": "עונה 1 פרק 28",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E28.mp4"
+      },
+      {
+        "id": "asfur-s1-e29",
+        "season": 1,
+        "number": 29,
+        "title": "עונה 1 פרק 29",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E29.mp4"
+      },
+      {
+        "id": "asfur-s1-e30",
+        "season": 1,
+        "number": 30,
+        "title": "עונה 1 פרק 30",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E30.mp4"
+      },
+      {
+        "id": "asfur-s1-e31",
+        "season": 1,
+        "number": 31,
+        "title": "עונה 1 פרק 31",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E31.mp4"
+      },
+      {
+        "id": "asfur-s1-e32",
+        "season": 1,
+        "number": 32,
+        "title": "עונה 1 פרק 32",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E32.mp4"
+      },
+      {
+        "id": "asfur-s1-e33",
+        "season": 1,
+        "number": 33,
+        "title": "עונה 1 פרק 33",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E33.mp4"
+      },
+      {
+        "id": "asfur-s1-e34",
+        "season": 1,
+        "number": 34,
+        "title": "עונה 1 פרק 34",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E34.mp4"
+      },
+      {
+        "id": "asfur-s1-e35",
+        "season": 1,
+        "number": 35,
+        "title": "עונה 1 פרק 35",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E35.mp4"
+      },
+      {
+        "id": "asfur-s1-e36",
+        "season": 1,
+        "number": 36,
+        "title": "עונה 1 פרק 36",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E36.mp4"
+      },
+      {
+        "id": "asfur-s1-e37",
+        "season": 1,
+        "number": 37,
+        "title": "עונה 1 פרק 37",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E37.mp4"
+      },
+      {
+        "id": "asfur-s1-e38",
+        "season": 1,
+        "number": 38,
+        "title": "עונה 1 פרק 38",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E38.mp4"
+      },
+      {
+        "id": "asfur-s1-e39",
+        "season": 1,
+        "number": 39,
+        "title": "עונה 1 פרק 39",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E39.mp4"
+      },
+      {
+        "id": "asfur-s1-e40",
+        "season": 1,
+        "number": 40,
+        "title": "עונה 1 פרק 40",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E40.mp4"
+      },
+      {
+        "id": "asfur-s1-e41",
+        "season": 1,
+        "number": 41,
+        "title": "עונה 1 פרק 41",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E41.mp4"
+      },
+      {
+        "id": "asfur-s1-e42",
+        "season": 1,
+        "number": 42,
+        "title": "עונה 1 פרק 42",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E42.mp4"
+      },
+      {
+        "id": "asfur-s1-e43",
+        "season": 1,
+        "number": 43,
+        "title": "עונה 1 פרק 43",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E43.mp4"
+      },
+      {
+        "id": "asfur-s1-e44",
+        "season": 1,
+        "number": 44,
+        "title": "עונה 1 פרק 44",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E44.mp4"
+      },
+      {
+        "id": "asfur-s1-e45",
+        "season": 1,
+        "number": 45,
+        "title": "עונה 1 פרק 45",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E45.mp4"
+      },
+      {
+        "id": "asfur-s1-e46",
+        "season": 1,
+        "number": 46,
+        "title": "עונה 1 פרק 46",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E46.mp4"
+      },
+      {
+        "id": "asfur-s1-e47",
+        "season": 1,
+        "number": 47,
+        "title": "עונה 1 פרק 47",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E47.mp4"
+      },
+      {
+        "id": "asfur-s1-e48",
+        "season": 1,
+        "number": 48,
+        "title": "עונה 1 פרק 48",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E48.mp4"
+      },
+      {
+        "id": "asfur-s1-e49",
+        "season": 1,
+        "number": 49,
+        "title": "עונה 1 פרק 49",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E49.mp4"
+      },
+      {
+        "id": "asfur-s1-e50",
+        "season": 1,
+        "number": 50,
+        "title": "עונה 1 פרק 50",
+        "duration": "35 דק'",
+        "streamUrl": "https://archive.org/download/asfur-s-01-e-50_202204/Asfur%20S01%20E50.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-ha-pijamot",
+    "title": "הפיג'מות",
+    "type": "series",
+    "category": "סדרות קומדיה ונוער",
+    "year": "2003-2015",
+    "seasons": "9 עונות",
+    "cast": "אילן רוזנפלד, קובי פרג', עודד פז, אלונה טל, דנה פרידר, יניב פולישוק, רבקה גור",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a2/Pijamot_Title.jpg/400px-Pijamot_Title.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/a/a2/Pijamot_Title.jpg/640px-Pijamot_Title.jpg",
+    "description": "סדרת הקאלט הגדולה של ערוץ הילדים על להקת הרוק הנתנייתית שעוברת לגור בתל אביב ומנסה להצליח בעולם המוזיקה לצד מסעדת ההמבורגרים של גרי מנדלבאום.",
+    "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E01.mp4",
+    "episodes": [
+      {
+        "id": "pijamot-s2-e1",
+        "season": 2,
+        "number": 1,
+        "title": "פרק 1: צוות לעניין",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E01.mp4"
+      },
+      {
+        "id": "pijamot-s2-e2",
+        "season": 2,
+        "number": 2,
+        "title": "פרק 2: ההפך הוא הנכון",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E02.mp4"
+      },
+      {
+        "id": "pijamot-s2-e3",
+        "season": 2,
+        "number": 3,
+        "title": "פרק 3: שיר מקורי",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E03.mp4"
+      },
+      {
+        "id": "pijamot-s2-e4",
+        "season": 2,
+        "number": 4,
+        "title": "פרק 4: קחי אותי אלונה",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E04.mp4"
+      },
+      {
+        "id": "pijamot-s2-e5",
+        "season": 2,
+        "number": 5,
+        "title": "פרק 5: המבורגריה גדולה",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E05.mp4"
+      },
+      {
+        "id": "pijamot-s2-e6",
+        "season": 2,
+        "number": 6,
+        "title": "פרק 6: הרדיו",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E06.mp4"
+      },
+      {
+        "id": "pijamot-s2-e7",
+        "season": 2,
+        "number": 7,
+        "title": "פרק 7: בעל הבית בא",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E07.mp4"
+      },
+      {
+        "id": "pijamot-s2-e8",
+        "season": 2,
+        "number": 8,
+        "title": "פרק 8: הטברנה של גרי",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E08.mp4"
+      },
+      {
+        "id": "pijamot-s2-e9",
+        "season": 2,
+        "number": 9,
+        "title": "פרק 9: בעל הבית משתגע",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E09.mp4"
+      },
+      {
+        "id": "pijamot-s2-e10",
+        "season": 2,
+        "number": 10,
+        "title": "פרק 10: סוף עונת הפיג'מות",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E10.mp4"
+      },
+      {
+        "id": "pijamot-s2-e11",
+        "season": 2,
+        "number": 11,
+        "title": "פרק 11: פאפראצי",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E11.mp4"
+      },
+      {
+        "id": "pijamot-s2-e12",
+        "season": 2,
+        "number": 12,
+        "title": "פרק 12: הפרק עם תום אבני",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E12.mp4"
+      },
+      {
+        "id": "pijamot-s2-e13",
+        "season": 2,
+        "number": 13,
+        "title": "פרק 13: האודישן",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E13.mp4"
+      },
+      {
+        "id": "pijamot-s2-e14",
+        "season": 2,
+        "number": 14,
+        "title": "פרק 14: בליינד דייט",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E14.mp4"
+      },
+      {
+        "id": "pijamot-s2-e15",
+        "season": 2,
+        "number": 15,
+        "title": "פרק 15: המלון",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E15.mp4"
+      },
+      {
+        "id": "pijamot-s2-e16",
+        "season": 2,
+        "number": 16,
+        "title": "פרק 16: סופר גרי",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E16.mp4"
+      },
+      {
+        "id": "pijamot-s2-e17",
+        "season": 2,
+        "number": 17,
+        "title": "פרק 17: מסיבת פיג'מות",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E17.mp4"
+      },
+      {
+        "id": "pijamot-s2-e18",
+        "season": 2,
+        "number": 18,
+        "title": "פרק 18: הבחירות",
+        "duration": "22 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E18.mp4"
+      },
+      {
+        "id": "pijamot-s2-e19",
+        "season": 2,
+        "number": 19,
+        "title": "פרק 19: פרק סיום עונה 2",
+        "duration": "23 דק'",
+        "streamUrl": "https://archive.org/download/HaPijamotSeason2/HaPijamot%20S02E19.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-kofiko",
+    "title": "קופיקו",
+    "type": "series",
+    "category": "ילדים ונוער",
+    "year": "2009-2023",
+    "seasons": "עונה 2",
+    "cast": "קופיקו, יורם יוספסברג, רודי סעדה, טליה ברקאי, חנה רוט",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/4/4b/Kofiko_2009.jpg/400px-Kofiko_2009.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/6/6d/Koficonoga.jpg",
+    "description": "הקוף המדבר הכי שובב במדינה מגיע ממשמר השלושים ומכניס את כל משפחת לזר והשכנה שושנה להרפתקאות קורעות.",
+    "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%90%D7%A7%D7%95%D7%95%D7%90%D7%A8%D7%99%D7%95%D7%9D%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4",
+    "episodes": [
+      {
+        "id": "kofiko-s2-e1",
+        "season": 2,
+        "number": 1,
+        "title": "פרק 1: אקוואריום",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%90%D7%A7%D7%95%D7%95%D7%90%D7%A8%D7%99%D7%95%D7%9D%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e2",
+        "season": 2,
+        "number": 2,
+        "title": "פרק 2: בגודו",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%91%D7%92%D7%95%D7%93%D7%95%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e3",
+        "season": 2,
+        "number": 3,
+        "title": "פרק 3: ביציקופטר",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%91%D7%99%D7%A6%D7%99%D7%A7%D7%95%D7%A4%D7%98%D7%A8%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e4",
+        "season": 2,
+        "number": 4,
+        "title": "פרק 4: בכדור פורח",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%91%D7%9B%D7%93%D7%95%D7%A8%20%D7%A4%D7%95%D7%A8%D7%97%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e5",
+        "season": 2,
+        "number": 5,
+        "title": "פרק 5: במוזיאון",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%91%D7%9E%D7%95%D7%96%D7%99%D7%90%D7%95%D7%9F%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e6",
+        "season": 2,
+        "number": 6,
+        "title": "פרק 6: במחנה",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%91%D7%9E%D7%97%D7%A0%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e7",
+        "season": 2,
+        "number": 7,
+        "title": "פרק 7: בספארי",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%91%D7%A1%D7%A4%D7%90%D7%A8%D7%99%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e8",
+        "season": 2,
+        "number": 8,
+        "title": "פרק 8: גנב הפומפיות",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%92%D7%A0%D7%91%20%D7%94%D7%A4%D7%95%D7%9E%D7%A4%D7%99%D7%95%D7%AA%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e9",
+        "season": 2,
+        "number": 9,
+        "title": "פרק 9: החייזר",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%94%D7%97%D7%99%D7%99%D7%96%D7%A8%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e10",
+        "season": 2,
+        "number": 10,
+        "title": "פרק 10: הקוסם",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%94%D7%A7%D7%95%D7%A1%D7%9D%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e11",
+        "season": 2,
+        "number": 11,
+        "title": "פרק 11: התוכי יוסי",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%94%D7%AA%D7%95%D7%9B%D7%99%20%D7%99%D7%95%D7%A1%D7%99%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e12",
+        "season": 2,
+        "number": 12,
+        "title": "פרק 12: כדורגל",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9B%D7%93%D7%95%D7%A8%D7%92%D7%9C%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e13",
+        "season": 2,
+        "number": 13,
+        "title": "פרק 13: כדורעף",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9B%D7%93%D7%95%D7%A8%D7%A2%D7%A3%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e14",
+        "season": 2,
+        "number": 14,
+        "title": "פרק 14: לנוגה יש יום הולדת",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9C%D7%A0%D7%95%D7%92%D7%94%20%D7%99%D7%A9%20%D7%99%D7%95%D7%9D%20%D7%94%D7%95%D7%9C%D7%93%D7%AA%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e15",
+        "season": 2,
+        "number": 15,
+        "title": "פרק 15: מורה מחליפה",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9E%D7%95%D7%A8%D7%94%20%D7%9E%D7%97%D7%9C%D7%99%D7%A4%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e16",
+        "season": 2,
+        "number": 16,
+        "title": "פרק 16: מנצח המקהלה",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9E%D7%A0%D7%A6%D7%97%20%D7%94%D7%9E%D7%A7%D7%94%D7%9C%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e17",
+        "season": 2,
+        "number": 17,
+        "title": "פרק 17: מעצב שיער",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9E%D7%A2%D7%A6%D7%91%20%D7%A9%D7%99%D7%A2%D7%A8%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e18",
+        "season": 2,
+        "number": 18,
+        "title": "פרק 18: מפלגת הילדים",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9E%D7%A4%D7%9C%D7%92%D7%AA%20%D7%94%D7%99%D7%9C%D7%93%D7%99%D7%9D%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e19",
+        "season": 2,
+        "number": 19,
+        "title": "פרק 19: מצלמה נסתרת",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%9E%D7%A6%D7%9C%D7%9E%D7%94%20%D7%A0%D7%A1%D7%AA%D7%A8%D7%AA%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e20",
+        "season": 2,
+        "number": 20,
+        "title": "פרק 20: סדר חדש",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%A1%D7%93%D7%A8%20%D7%97%D7%93%D7%A9%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e21",
+        "season": 2,
+        "number": 21,
+        "title": "פרק 21: סוכריות ציקיטה",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%A1%D7%95%D7%9B%D7%A8%D7%99%D7%95%D7%AA%20%D7%A6%D7%99%D7%A7%D7%99%D7%98%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e22",
+        "season": 2,
+        "number": 22,
+        "title": "פרק 22: פטרוזיליה",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%A4%D7%98%D7%A8%D7%95%D7%96%D7%99%D7%9C%D7%99%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e23",
+        "season": 2,
+        "number": 23,
+        "title": "פרק 23: פינג פונג",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%A4%D7%99%D7%A0%D7%92%20%D7%A4%D7%95%D7%A0%D7%92%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      },
+      {
+        "id": "kofiko-s2-e24",
+        "season": 2,
+        "number": 24,
+        "title": "פרק 24: שוטרת תנועה",
+        "streamUrl": "https://archive.org/download/kofiko-season-2/%D7%A7%D7%95%D7%A4%D7%99%D7%A7%D7%95%20%D7%A2%D7%95%D7%A0%D7%94%202%20-%20%D7%A9%D7%95%D7%98%D7%A8%D7%AA%20%D7%AA%D7%A0%D7%95%D7%A2%D7%94%20%D7%99%D7%95%D7%A7%D7%99%D7%93.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-euphoria",
+    "title": "אופוריה (Euphoria - הסדרה המקורית)",
+    "type": "series",
+    "category": "דרמה",
+    "year": "2012-2013",
+    "seasons": "עונה 1",
+    "cast": "רוני דלומי, רועי ניק, דקל עדין, עמית רהב, מאור שוויצר, אביב פנקס",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f7/Euphoria_israeli_series_poster.jpg/400px-Euphoria_israeli_series_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/2/27/%D7%90%D7%95%D7%A4%D7%95%D7%A8%D7%99%D7%94_%D7%A1%D7%93%D7%A8%D7%AA_%D7%98%D7%9C%D7%95%D7%95%D7%99%D7%96%D7%99%D7%94.jpg",
+    "description": "סדרת הדרמה הישראלית הנועזת של רון לשם ודפנה לוין, שעובדה בהמשך ללהיט הבינלאומי של HBO, על עולמם המורכב והפרוע של בני נוער.",
+    "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2301.mp4",
+    "episodes": [
+      {
+        "id": "euphoria-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2301.mp4"
+      },
+      {
+        "id": "euphoria-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2302.mp4"
+      },
+      {
+        "id": "euphoria-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2303.mp4"
+      },
+      {
+        "id": "euphoria-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2304.mp4"
+      },
+      {
+        "id": "euphoria-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2305.mp4"
+      },
+      {
+        "id": "euphoria-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2306.mp4"
+      },
+      {
+        "id": "euphoria-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "פרק 7",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2307.mp4"
+      },
+      {
+        "id": "euphoria-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "פרק 8",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2308.mp4"
+      },
+      {
+        "id": "euphoria-s1-e9",
+        "season": 1,
+        "number": 9,
+        "title": "פרק 9",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2309.mp4"
+      },
+      {
+        "id": "euphoria-s1-e10",
+        "season": 1,
+        "number": 10,
+        "title": "פרק 10",
+        "duration": "50 דק'",
+        "streamUrl": "https://archive.org/download/1_20220530_20220530_0806/%2310.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-haborer",
+    "title": "הבורר",
+    "type": "series",
+    "category": "דרמת מתח ופשע",
+    "year": "2007-2014",
+    "seasons": "4 עונות",
+    "cast": "משה איבגי, יהודה לוי, שלומי קוריאט, ליאור רז, חנה אזולאי הספרי, אניה בוקשטיין",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/6/6c/Haborer_poster.jpg/400px-Haborer_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/0/0b/Haborer3.jpg",
+    "description": "סדרת הפשע המיתולוגית של רשף לוי על ברוך אסולין \"הבורר\" בעולם התחתון, ובנו האובד נדב פלדמן, עובד סוציאלי הנשאב לעולם הפשע.",
+    "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4",
+    "episodes": [
+      {
+        "id": "haborer-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: הבורר פותח שולחן",
+        "duration": "45 דק'",
+        "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4"
+      },
+      {
+        "id": "haborer-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: נדב נכנס לעניינים",
+        "duration": "45 דק'",
+        "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4"
+      },
+      {
+        "id": "haborer-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: הכופר",
+        "duration": "44 דק'",
+        "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4"
+      },
+      {
+        "id": "haborer-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: נקמת הדם",
+        "duration": "45 דק'",
+        "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4"
+      },
+      {
+        "id": "haborer-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: המפגש במלון",
+        "duration": "46 דק'",
+        "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4"
+      },
+      {
+        "id": "haborer-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: נאמנות למשפחה",
+        "duration": "45 דק'",
+        "streamUrl": "https://archive.org/download/haborer-s-1-e-1/Haborer_S1E1.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-manayek",
+    "title": "מנאייכ",
+    "type": "series",
+    "category": "דרמת מתח ופשע",
+    "year": "2020-2024",
+    "seasons": "3 עונות",
+    "cast": "שלום אסייג, עמוס תמם, מיה דגן, לירז חממי, דורון בן דוד, ששון גבאי",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/4/4c/Manayek_Poster.jpg/400px-Manayek_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/commons/9/98/Manayek_1.jpg",
+    "description": "חוקר מח\"ש הוותיק איזי בכר נשלח לחקור את חברו הטוב ביותר, קצין משטרה מעוטר החשוד בשחיתות חמורה.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "manayek-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: חברים",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: החקירה מתחילה",
+        "duration": "46 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: עד המדינה",
+        "duration": "44 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: מלכודת",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: שקרים",
+        "duration": "47 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: פשיטה",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "פרק 7: נקודת שבירה",
+        "duration": "46 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "manayek-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "פרק 8: צמיגים",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-tehran",
+    "title": "טהרן (Tehran)",
+    "type": "series",
+    "category": "דרמת ריגול",
+    "year": "2020-2024",
+    "seasons": "2 עונות",
+    "cast": "ניב סולטן, שון טאוב, שרבין אלנבי, גלן קלוז, וסיל גורגייב",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/8/8e/Tehran_tv_series_poster.jpg/400px-Tehran_tv_series_poster.jpg",
+    "backdrop": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Tehrana_TV_S_0-2-CLR.jpg/640px-Tehrana_TV_S_0-2-CLR.jpg",
+    "description": "הסדרה הישראלית זוכת פרס האמי הבינלאומי: האקרית צעירה של המוסד נשלחת למשימה חשאית ומסוכנת בלב איראן.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "tehran-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: טיסה 114",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: הדם על ידיה",
+        "duration": "44 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: בתו של יסמין",
+        "duration": "46 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: שאקירה",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: האחר",
+        "duration": "43 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: המהנדס",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "פרק 7: אבא של תמר",
+        "duration": "46 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "tehran-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "פרק 8: מכת אש",
+        "duration": "48 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-fauda",
+    "title": "פאודה (Fauda)",
+    "type": "series",
+    "category": "דרמת אקשן ומתח",
+    "year": "2015-2023",
+    "seasons": "4 עונות",
+    "cast": "ליאור רז, איציק כהן, רונה-לי שמעון, דורון בן דוד, יעקב זדה-דניאל, עידן עמדי",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/0/05/Fauda_poster_season_4.jpg/400px-Fauda_poster_season_4.jpg",
+    "backdrop": "https://thumb.wikimedia.org/wikipedia/he/thumb/0/02/FAUDA1.jpg/640px-FAUDA1.jpg",
+    "description": "סדרת הפעולה הישראלית המצליחה בעולם העוקבת אחר צוות המסתערבים בפיקודו של דורון קביליו במרדף אחר מבוקשים.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "fauda-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: הפנתר חוזר",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: מרדף בשכם",
+        "duration": "44 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: מסתערבים בפעולה",
+        "duration": "46 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: החתונה",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: הפצצה",
+        "duration": "47 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: החיסול",
+        "duration": "45 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "פרק 7: מארב",
+        "duration": "44 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "fauda-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "פרק 8: מבצע חילוץ",
+        "duration": "48 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-shababnikim",
+    "title": "שבאבניקים",
+    "type": "series",
+    "category": "דרמה קומית",
+    "year": "2017-2023",
+    "seasons": "2 עונות",
+    "cast": "דניאל גד, אורי לייזרוביץ', ישראל אטיאס, עומר פרלמן, גורי אלפי, מאיה ורטהיימר",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/2/23/Shababnikim_poster.jpg/400px-Shababnikim_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/2/23/Shababnikim_poster.jpg/640px-Shababnikim_poster.jpg",
+    "description": "ארבעה תלמידי ישיבה חרדים יוקרתית בירושלים מנסים ליהנות מהחיים המודרניים תוך שמירה על עולמם הדתי.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "shabab-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: הוועד",
+        "duration": "35 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: הקפה",
+        "duration": "34 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: השידוך של לייזר",
+        "duration": "36 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: מבחן הרבנות",
+        "duration": "35 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: חליפה חדשה",
+        "duration": "35 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: הדירה במרכז העיר",
+        "duration": "36 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e7",
+        "season": 1,
+        "number": 7,
+        "title": "פרק 7: השבת של מאיר",
+        "duration": "35 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shabab-s1-e8",
+        "season": 1,
+        "number": 8,
+        "title": "פרק 8: ראש הישיבה",
+        "duration": "38 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-hayehudim-baim",
+    "title": "היהודים באים",
+    "type": "series",
+    "category": "סדרות סאטירה",
+    "year": "2014-2024",
+    "seasons": "5 עונות",
+    "cast": "מוני מושונוב, יעל שרוני, יוסי מרשק, עידו מוסרי, יניב ביטון, שירה נאור",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1a/Hayehudim_Baim_poster.jpg/400px-Hayehudim_Baim_poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/1/1a/Hayehudim_Baim_poster.jpg/640px-Hayehudim_Baim_poster.jpg",
+    "description": "תוכנית המערכונים והסאטירה החריפה הבוחנת את ההיסטוריה של העם היהודי מתקופת התנ\"ך ועד ימינו.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "hayehudim-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: יציאת מצרים ועשרת הדיברות",
+        "duration": "28 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hayehudim-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: מלך ישראל ודוד המלך",
+        "duration": "27 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hayehudim-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: גלות בבל והחשמונאים",
+        "duration": "29 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hayehudim-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: המחתרות והקמת המדינה",
+        "duration": "28 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hayehudim-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: העליות הגדולות",
+        "duration": "27 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hayehudim-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: מלחמת ששת הימים",
+        "duration": "30 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-ramzor",
+    "title": "רמזור (Traffic Light)",
+    "type": "series",
+    "category": "סדרות קומדיה",
+    "year": "2008-2014",
+    "seasons": "4 עונות",
+    "cast": "אדיר מילר, ליאור כלפון, נירו לוי, יעל שרוני, ליאת הר לב",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/c/c5/Ramzor_s4.jpg/400px-Ramzor_s4.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/d/d3/RamzorLogo.png",
+    "description": "הקומדיה המיתולוגית של אדיר מילר ורן שריג, זוכת פרס האמי, על שלושה חברים בתל אביב בשלבים שונים של הזוגיות: אמיר (רמזור אדום), איצקו (רמזור צהוב) וחפר (רמזור ירוק).",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "ramzor-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: הירוק, הצהוב והאדום",
+        "duration": "30 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "ramzor-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: הספה של איצקו",
+        "duration": "31 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "ramzor-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: הדייט של חפר",
+        "duration": "30 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "ramzor-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: הטבעת",
+        "duration": "32 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "ramzor-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: שיפוצים",
+        "duration": "30 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "ramzor-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: הטיסה",
+        "duration": "31 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-shemesh",
+    "title": "שמש",
+    "type": "series",
+    "category": "סדרות נוסטלגיה",
+    "year": "1997-2004",
+    "seasons": "6 עונות",
+    "cast": "צביקה הדר, גלית גיאת, זבולון מושיאשווילי, אורלי ויינרמן, גדי רבינוביץ'",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Shemesh_title.png/400px-Shemesh_title.png",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/f/f6/Shemesh_title.png/640px-Shemesh_title.png",
+    "description": "הסיטקום הישראלי הנוסטלגי והאהוב על נחום שמש, בעל מסעדת \"אימפריית השמש\" בלב תל אביב, אתי חברתו, ששי הטבח וטנצר המניאק.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "shemesh-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: אימפריית השמש נפתחת",
+        "duration": "25 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shemesh-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: הפסל של אתי",
+        "duration": "24 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shemesh-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: טנצר המניאק מגיע",
+        "duration": "25 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shemesh-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: הבחינה של ששי",
+        "duration": "26 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shemesh-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: הקייטרינג הגדול",
+        "duration": "25 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "shemesh-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: החלום של נחום",
+        "duration": "25 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "id": "vod-hahayim-ze-lo-hakol",
+    "title": "החיים זה לא הכל",
+    "type": "series",
+    "category": "סדרות קומדיה",
+    "year": "2001-2011",
+    "seasons": "9 עונות",
+    "cast": "אבי קושניר, ענת וקסמן, עידן אלתרמן, מוטי כץ, יעל לבנטל",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/b/b3/Hahayim_ze_lo_hakol.jpg/400px-Hahayim_ze_lo_hakol.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/b/b1/LoAkol.jpg",
+    "description": "הקומדיה המצליחה של דניאל לפין על גדי ודפנה נוימן, זוג תל-אביבי החווה עליות ומורדות בחיי הנישואין לצד חבריהם המוזרים.",
+    "streamUrl": "https://archive.org/download/3-10_20231126/%D7%94%D7%97%D7%99%D7%99%D7%9D%20%D7%96%D7%94%20%D7%9C%D7%90%20%D7%94%D7%9B%D7%9C%20%D7%A2%D7%95%D7%A0%D7%94%203%20%D7%A4%D7%A8%D7%A7%2010.mp4",
+    "episodes": [
+      {
+        "id": "lo-hakol-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: שלום שלום",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/3-10_20231126/%D7%94%D7%97%D7%99%D7%99%D7%9D%20%D7%96%D7%94%20%D7%9C%D7%90%20%D7%94%D7%9B%D7%9C%20%D7%A2%D7%95%D7%A0%D7%94%203%20%D7%A4%D7%A8%D7%A7%2010.mp4"
+      },
+      {
+        "id": "lo-hakol-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: ארוחת שישי",
+        "duration": "24 דק'",
+        "streamUrl": "https://archive.org/download/3-10_20231126/%D7%94%D7%97%D7%99%D7%99%D7%9D%20%D7%96%D7%94%20%D7%9C%D7%90%20%D7%94%D7%9B%D7%9C%20%D7%A2%D7%95%D7%A0%D7%94%203%20%D7%A4%D7%A8%D7%A7%2010.mp4"
+      },
+      {
+        "id": "lo-hakol-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: טיפול זוגי",
+        "duration": "26 דק'",
+        "streamUrl": "https://archive.org/download/3-10_20231126/%D7%94%D7%97%D7%99%D7%99%D7%9D%20%D7%96%D7%94%20%D7%9C%D7%90%20%D7%94%D7%9B%D7%9C%20%D7%A2%D7%95%D7%A0%D7%94%203%20%D7%A4%D7%A8%D7%A7%2010.mp4"
+      },
+      {
+        "id": "lo-hakol-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: השכנים מלמעלה",
+        "duration": "25 דק'",
+        "streamUrl": "https://archive.org/download/3-10_20231126/%D7%94%D7%97%D7%99%D7%99%D7%9D%20%D7%96%D7%94%20%D7%9C%D7%90%20%D7%94%D7%9B%D7%9C%20%D7%A2%D7%95%D7%A0%D7%94%203%20%D7%A4%D7%A8%D7%A7%2010.mp4"
+      },
+      {
+        "id": "lo-hakol-s3-e10",
+        "season": 3,
+        "number": 10,
+        "title": "עונה 3 פרק 10: סגירת חשבונות",
+        "duration": "28 דק'",
+        "streamUrl": "https://archive.org/download/3-10_20231126/%D7%94%D7%97%D7%99%D7%99%D7%9D%20%D7%96%D7%94%20%D7%9C%D7%90%20%D7%94%D7%9B%D7%9C%20%D7%A2%D7%95%D7%A0%D7%94%203%20%D7%A4%D7%A8%D7%A7%2010.mp4"
+      }
+    ]
+  },
+  {
+    "id": "vod-hatufim",
+    "title": "חטופים (Prisoners of War)",
+    "type": "series",
+    "category": "דרמת מתח",
+    "year": "2010-2012",
+    "seasons": "2 עונות",
+    "cast": "יורם טולדנו, ישי גולן, אסי כהן, מילי אביטל, יעל אבקסיס",
+    "poster": "https://upload.wikimedia.org/wikipedia/he/thumb/e/e5/Hatufim_Poster.jpg/400px-Hatufim_Poster.jpg",
+    "backdrop": "https://upload.wikimedia.org/wikipedia/he/thumb/e/e5/Hatufim_Poster.jpg/640px-Hatufim_Poster.jpg",
+    "description": "סדרת המופת של גידי רף שהיוותה את הבסיס לסדרה האמריקאית \"הומלנד\", על חזרתם של חיילים ישראלים משבי ממושך בסוריה.",
+    "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8",
+    "episodes": [
+      {
+        "id": "hatufim-s1-e1",
+        "season": 1,
+        "number": 1,
+        "title": "פרק 1: השיבה הביתה",
+        "duration": "50 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hatufim-s1-e2",
+        "season": 1,
+        "number": 2,
+        "title": "פרק 2: מתקן החקירות",
+        "duration": "48 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hatufim-s1-e3",
+        "season": 1,
+        "number": 3,
+        "title": "פרק 3: התמונה",
+        "duration": "49 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hatufim-s1-e4",
+        "season": 1,
+        "number": 4,
+        "title": "פרק 4: מכתב מעמיאל",
+        "duration": "48 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hatufim-s1-e5",
+        "season": 1,
+        "number": 5,
+        "title": "פרק 5: הדפים החסרים",
+        "duration": "50 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      },
+      {
+        "id": "hatufim-s1-e6",
+        "season": 1,
+        "number": 6,
+        "title": "פרק 6: סיום עונה 1",
+        "duration": "52 דק'",
+        "streamUrl": "https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8"
+      }
+    ]
+  }
+]
