@@ -78,6 +78,19 @@ const openUrlLink = document.getElementById('openUrlLink');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const toastNotification = document.getElementById('toastNotification');
 
+// Insecure Content Guide Modal Elements
+const insecureHelpModal = document.getElementById('insecureHelpModal');
+const closeInsecureHelpBtn = document.getElementById('closeInsecureHelpBtn');
+const gotItInsecureHelpBtn = document.getElementById('gotItInsecureHelpBtn');
+const openInsecureGuideBtn = document.getElementById('openInsecureGuideBtn');
+
+function openInsecureHelpModal() {
+  if (insecureHelpModal) insecureHelpModal.style.display = 'flex';
+}
+function closeInsecureHelpModal() {
+  if (insecureHelpModal) insecureHelpModal.style.display = 'none';
+}
+
 // Series Modal Elements & Overlay Buttons
 const seriesModal = document.getElementById('seriesModal');
 const closeSeriesModalBtn = document.getElementById('closeSeriesModalBtn');
@@ -717,8 +730,9 @@ function playStreamSource(streamUrl, successMsg, channelObj = null) {
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
             if (window.location.protocol === 'https:' && streamUrl.startsWith('http://')) {
-              setStreamStatus('error', 'נחסם ע"י הדפדפן (שידור ב-HTTP)');
-              showToast('⚠️ ערוץ ב-HTTP: עבור לגרסת http://israel-global-tv.surge.sh כדי לצפות');
+              setStreamStatus('error', '⚠️ נחסם ע"י הדפדפן (HTTP) - לחץ כאן להסבר');
+              showToast('⚠️ ערוץ ב-HTTP נחסם ע"י הדפדפן. לחץ על הסטטוס לפתיחה');
+              openInsecureHelpModal();
             } else {
               setStreamStatus('error', 'שגיאת רשת / הזרמה מוגנת');
               if (channelObj) markChannelDead(channelObj);
@@ -1570,6 +1584,29 @@ function setupEventListeners() {
     sourceModal.addEventListener('click', (e) => {
       if (e.target === sourceModal) {
         closeSourceModal();
+      }
+    });
+  }
+
+  // Insecure Content Guide Modal listeners
+  if (openInsecureGuideBtn) {
+    openInsecureGuideBtn.addEventListener('click', openInsecureHelpModal);
+  }
+  if (closeInsecureHelpBtn) {
+    closeInsecureHelpBtn.addEventListener('click', closeInsecureHelpModal);
+  }
+  if (gotItInsecureHelpBtn) {
+    gotItInsecureHelpBtn.addEventListener('click', closeInsecureHelpModal);
+  }
+  if (insecureHelpModal) {
+    insecureHelpModal.addEventListener('click', (e) => {
+      if (e.target === insecureHelpModal) closeInsecureHelpModal();
+    });
+  }
+  if (playerStatusText) {
+    playerStatusText.addEventListener('click', () => {
+      if (playerStatusText.textContent.includes('HTTP')) {
+        openInsecureHelpModal();
       }
     });
   }

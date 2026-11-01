@@ -2320,11 +2320,10 @@ video {
     <div class="banner-content">
       <span class="banner-icon">💡</span>
       <span class="banner-text">
-        <strong>שים לב:</strong> האתר נפתח ב-HTTPS, ולכן הדפדפן חוסם שידורי וידאו ב-HTTP (כמו ערוץ 12, 13 וערוצי ספורט).
-        לפתיחת <strong>כל</strong> הערוצים ללא חסימות דפדפן:
-        <a id="switchToHttpLink" href="http://israel-global-tv.surge.sh" class="banner-btn">עבור לגרסת HTTP 🔓</a>
-        או פתח ברשת הביתית:
-        <a href="http://localhost:8080" class="banner-link">localhost:8080</a>
+        <strong>טיפ לצפייה בכל הערוצים:</strong> ערוצים המשדרים ב-HTTP נחסמים כברירת מחדל ע"י הדפדפן באתרי HTTPS.
+        <button id="openInsecureGuideBtn" class="banner-btn" type="button">איך לפתוח את כל הערוצים ב-10 שניות 🔓</button>
+        או צפה ברשת הביתית ב-HTTP:
+        <a href="http://localhost:8080" class="banner-link" target="_blank">localhost:8080</a>
       </span>
     </div>
     <button id="closeBannerBtn" class="banner-close" title="סגור הודעה">✕</button>
@@ -2494,6 +2493,35 @@ video {
         <div class="modal-links">
           <a id="openUrlLink" href="#" target="_blank" rel="noopener noreferrer" class="external-link">🔗 פתח קישור בחלון חדש</a>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insecure Content Guide Modal (HTTP over HTTPS) -->
+  <div id="insecureHelpModal" class="modal-backdrop" style="display:none;">
+    <div class="modal-box" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3>💡 פתיחת ערוצי HTTP בדפדפן (מדריך מהיר)</h3>
+        <button id="closeInsecureHelpBtn" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          חלק מערוצי הטלוויזיה (כמו ערוץ 12, ערוץ 24 וערוצי ספורט) משדרים בפרוטוקול <strong>HTTP</strong>. 
+          כשהאתר פתוח ב-HTTPS מאובטח, הדפדפן חוסם שידורים אלה כברירת מחדל (Mixed Content).
+        </p>
+        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: var(--radius-md); padding: 1.1rem; margin: 1rem 0; font-size: 0.92rem; line-height: 1.65;">
+          <div style="font-weight: 800; color: #93c5fd; margin-bottom: 0.6rem; font-size: 1rem;">🔓 איך לפתוח את כל הערוצים ב-10 שניות:</div>
+          <div>1. לחץ על <strong>סמל המנעול / הגדרות האתר (🔒)</strong> בצד שורת הכתובת של הדפדפן למעלה.</div>
+          <div>2. בחר ב-<strong>"הגדרות האתר" (Site settings)</strong>.</div>
+          <div>3. גלול למטה לשורה <strong>"תוכן לא מאובטח" (Insecure content)</strong> ושנה מ-"חסום" ל-<strong>"אפשר" (Allow)</strong>.</div>
+          <div>4. רענן את העמוד — ברגע זה כל ערוצי ה-HTTP יתחילו לנגן חלק!</div>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+          💡 <strong>אפשרות חלופית:</strong> פתח את האתר ברשת הביתית ב-HTTP טהור:
+          <a href="http://localhost:8080" class="banner-link" target="_blank">localhost:8080</a>
+          או <a href="http://192.168.1.154:8080" class="banner-link" target="_blank">192.168.1.154:8080</a>
+        </div>
+        <button id="gotItInsecureHelpBtn" class="btn btn-primary" style="width: 100%; justify-content: center;">הבנתי, סגור מדריך 👍</button>
       </div>
     </div>
   </div>
@@ -131782,6 +131810,19 @@ const openUrlLink = document.getElementById('openUrlLink');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const toastNotification = document.getElementById('toastNotification');
 
+// Insecure Content Guide Modal Elements
+const insecureHelpModal = document.getElementById('insecureHelpModal');
+const closeInsecureHelpBtn = document.getElementById('closeInsecureHelpBtn');
+const gotItInsecureHelpBtn = document.getElementById('gotItInsecureHelpBtn');
+const openInsecureGuideBtn = document.getElementById('openInsecureGuideBtn');
+
+function openInsecureHelpModal() {
+  if (insecureHelpModal) insecureHelpModal.style.display = 'flex';
+}
+function closeInsecureHelpModal() {
+  if (insecureHelpModal) insecureHelpModal.style.display = 'none';
+}
+
 // Series Modal Elements & Overlay Buttons
 const seriesModal = document.getElementById('seriesModal');
 const closeSeriesModalBtn = document.getElementById('closeSeriesModalBtn');
@@ -132421,8 +132462,9 @@ function playStreamSource(streamUrl, successMsg, channelObj = null) {
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
             if (window.location.protocol === 'https:' && streamUrl.startsWith('http://')) {
-              setStreamStatus('error', 'נחסם ע"י הדפדפן (שידור ב-HTTP)');
-              showToast('⚠️ ערוץ ב-HTTP: עבור לגרסת http://israel-global-tv.surge.sh כדי לצפות');
+              setStreamStatus('error', '⚠️ נחסם ע"י הדפדפן (HTTP) - לחץ כאן להסבר');
+              showToast('⚠️ ערוץ ב-HTTP נחסם ע"י הדפדפן. לחץ על הסטטוס לפתיחה');
+              openInsecureHelpModal();
             } else {
               setStreamStatus('error', 'שגיאת רשת / הזרמה מוגנת');
               if (channelObj) markChannelDead(channelObj);
@@ -133274,6 +133316,29 @@ function setupEventListeners() {
     sourceModal.addEventListener('click', (e) => {
       if (e.target === sourceModal) {
         closeSourceModal();
+      }
+    });
+  }
+
+  // Insecure Content Guide Modal listeners
+  if (openInsecureGuideBtn) {
+    openInsecureGuideBtn.addEventListener('click', openInsecureHelpModal);
+  }
+  if (closeInsecureHelpBtn) {
+    closeInsecureHelpBtn.addEventListener('click', closeInsecureHelpModal);
+  }
+  if (gotItInsecureHelpBtn) {
+    gotItInsecureHelpBtn.addEventListener('click', closeInsecureHelpModal);
+  }
+  if (insecureHelpModal) {
+    insecureHelpModal.addEventListener('click', (e) => {
+      if (e.target === insecureHelpModal) closeInsecureHelpModal();
+    });
+  }
+  if (playerStatusText) {
+    playerStatusText.addEventListener('click', () => {
+      if (playerStatusText.textContent.includes('HTTP')) {
+        openInsecureHelpModal();
       }
     });
   }
