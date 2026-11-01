@@ -2,6 +2,12 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    // Force HTTP instead of HTTPS if host supports it (avoids browser mixed-content block for HTTP streams)
+    if (window.location.protocol === 'https:' && !window.location.hostname.endsWith('github.io')) {
+      window.location.href = window.location.href.replace('https:', 'http:');
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Global TV Live | צפייה בשידורים חיים מכל העולם</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233b82f6'><path d='M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z'/></svg>" />
@@ -2405,7 +2411,7 @@ window.EMBEDDED_CHANNELS = [
     "logo": "https://i.imgur.com/eFM3bTq.png",
     "country": "IL",
     "category": "Israel",
-    "url": "http://stream.mcquack.net/295/index.m3u8",
+    "url": "https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8",
     "countryName": "Israel",
     "flag": "🇮🇱"
   },
