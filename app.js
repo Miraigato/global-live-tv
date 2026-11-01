@@ -37,6 +37,7 @@ const overlayMetaEl = document.getElementById('overlayMeta');
 const overlayFavBtn = document.getElementById('overlayFavBtn');
 const theaterBtn = document.getElementById('theaterBtn');
 const overlayFullscreenBtn = document.getElementById('overlayFullscreenBtn');
+const overlayHttpBtn = document.getElementById('overlayHttpBtn');
 const playerStatusText = document.getElementById('playerStatusText');
 const playerPanel = document.querySelector('.player-panel');
 const playerBox = document.getElementById('playerBox');
@@ -624,7 +625,7 @@ function renderGrid() {
         <div class="card-details">
           <span>${channel.flag || '🌐'} ${channel.country || ''}</span>
           ${channel.category ? `<span class="card-tag">${channel.category}</span>` : ''}
-          ${window.location.protocol === 'https:' && channel.url.startsWith('http://') ? `<span class="proto-tag" title="שידור HTTP - זמין בגרסת HTTP">HTTP</span>` : ''}
+          ${channel.url && channel.url.startsWith('http://') ? `<button type="button" class="proto-tag proto-btn" data-url="${encodeURIComponent(channel.url)}" data-name="${encodeURIComponent(channel.name)}" title="שידור HTTP - לחץ לפתיחה בחלון חדש (עוקף חסימת HTTPS) ↗">HTTP ↗</button>` : ''}
         </div>
         ${isDead ? `<span class="offline-pill" title="ערוץ לא זמין / לא פעיל">לא פעיל</span>` : ''}
       </div>
@@ -684,6 +685,7 @@ function renderVodGrid() {
             <span>📅 ${item.year || ''}</span>
             ${metaExtra ? `<span>• ${metaExtra}</span>` : ''}
             <span class="card-tag">${item.category}</span>
+            ${item.streamUrl && item.streamUrl.startsWith('http://') ? `<button type="button" class="proto-tag proto-btn" data-url="${encodeURIComponent(item.streamUrl)}" data-name="${encodeURIComponent(item.title)}" title="שידור HTTP - לחץ לפתיחה בחלון חדש (עוקף חסימת HTTPS) ↗">HTTP ↗</button>` : ''}
           </div>
           <p class="vod-desc" title="${item.description}">${item.description}</p>
         </div>
@@ -791,6 +793,19 @@ function playChannel(channel) {
   const chId = channel.id || channel.url;
   overlayFavBtn.classList.toggle('is-fav', favorites.includes(chId));
 
+  if (overlayHttpBtn) {
+    if (channel.url && channel.url.startsWith('http://')) {
+      overlayHttpBtn.style.display = 'inline-flex';
+      overlayHttpBtn.onclick = (e) => {
+        e.stopPropagation();
+        window.open(channel.url, '_blank', 'noopener,noreferrer');
+        showToast(`🚀 פותח את ${channel.name} בחלון נפרד...`);
+      };
+    } else {
+      overlayHttpBtn.style.display = 'none';
+    }
+  }
+
   setStreamStatus('connecting', 'מתחבר לשידור...');
 
   // Highlight active channel card
@@ -824,6 +839,19 @@ function playMovie(movie) {
   const itemId = movie.id || movie.streamUrl;
   overlayFavBtn.classList.toggle('is-fav', favorites.includes(itemId));
 
+  if (overlayHttpBtn) {
+    if (movie.streamUrl && movie.streamUrl.startsWith('http://')) {
+      overlayHttpBtn.style.display = 'inline-flex';
+      overlayHttpBtn.onclick = (e) => {
+        e.stopPropagation();
+        window.open(movie.streamUrl, '_blank', 'noopener,noreferrer');
+        showToast(`🚀 פותח את ${movie.title} בחלון נפרד...`);
+      };
+    } else {
+      overlayHttpBtn.style.display = 'none';
+    }
+  }
+
   setStreamStatus('connecting', 'טוען סרט...');
 
   // Highlight active card
@@ -854,6 +882,19 @@ function playSeriesEpisode(series, ep) {
   overlayMetaEl.textContent = `📺 ${seasonStr}פרק ${epNum} • ${ep.duration || ''} • ${series.category || 'סדרה'}`;
 
   overlayFavBtn.classList.toggle('is-fav', favorites.includes(series.id));
+
+  if (overlayHttpBtn) {
+    if (ep.streamUrl && ep.streamUrl.startsWith('http://')) {
+      overlayHttpBtn.style.display = 'inline-flex';
+      overlayHttpBtn.onclick = (e) => {
+        e.stopPropagation();
+        window.open(ep.streamUrl, '_blank', 'noopener,noreferrer');
+        showToast(`🚀 פותח את ${series.title}: ${ep.title} בחלון נפרד...`);
+      };
+    } else {
+      overlayHttpBtn.style.display = 'none';
+    }
+  }
 
   // Show episode navigation in overlay
   if (overlayEpisodesBtn) overlayEpisodesBtn.style.display = 'inline-flex';
@@ -1438,6 +1479,16 @@ function setupEventListeners() {
 
   // Channel & VOD Card Click & Fav Click delegation
   channelsGrid.addEventListener('click', (e) => {
+    const protoBtn = e.target.closest('.proto-btn');
+    if (protoBtn) {
+      e.stopPropagation();
+      const url = decodeURIComponent(protoBtn.dataset.url);
+      const name = decodeURIComponent(protoBtn.dataset.name);
+      window.open(url, '_blank', 'noopener,noreferrer');
+      showToast(`🚀 פותח את ${name} בחלון נפרד...`);
+      return;
+    }
+
     const favBtn = e.target.closest('.card-fav-btn');
     if (favBtn) {
       e.stopPropagation();

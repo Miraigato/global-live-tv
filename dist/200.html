@@ -941,6 +941,7 @@ video {
   color: var(--text-secondary);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.4rem;
 }
 
@@ -2029,13 +2030,34 @@ video {
 }
 
 .proto-tag {
-  background: rgba(239, 68, 68, 0.2);
+  background: rgba(239, 68, 68, 0.25);
   color: #fca5a5;
-  border: 1px solid rgba(239, 68, 68, 0.4);
+  border: 1px solid rgba(239, 68, 68, 0.5);
   border-radius: 4px;
-  font-size: 0.65rem;
-  padding: 1px 4px;
+  font-size: 0.68rem;
+  padding: 2px 6px;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1.2;
+  font-family: inherit;
+  outline: none;
+}
+
+.proto-btn:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+  transform: translateY(-1px);
+}
+
+.proto-btn:active {
+  transform: translateY(0);
 }
 
 /* Auth Lock Screen */
@@ -2391,6 +2413,7 @@ video {
               <button id="overlayPrevEpBtn" class="action-circle-btn series-nav-btn" title="פרק קודם" style="display:none;">⏮</button>
               <button id="overlayNextEpBtn" class="action-circle-btn series-nav-btn" title="פרק הבא" style="display:none;">⏭</button>
               <button id="pipRestoreBtn" class="action-circle-btn pip-restore-hint" title="החזר נגן למעלה">⬆</button>
+              <button id="overlayHttpBtn" class="action-circle-btn proto-tag proto-btn" title="פתח שידור בחלון חדש (עוקף חסימת HTTPS) ↗" style="display:none; padding: 4px 8px; font-size: 0.75rem;">HTTP ↗</button>
               <button id="overlaySourceBtn" class="action-circle-btn" title="הצג והעתק קישור מקור (Stream URL)">🔗</button>
               <button id="overlayFavBtn" class="action-circle-btn" title="הוסף למועדפים">★</button>
               <button id="theaterBtn" class="action-circle-btn" title="מצב קולנוע">⛶</button>
@@ -2515,6 +2538,9 @@ video {
           <div>2. בחר ב-<strong>"הגדרות האתר" (Site settings)</strong>.</div>
           <div>3. גלול למטה לשורה <strong>"תוכן לא מאובטח" (Insecure content)</strong> ושנה מ-"חסום" ל-<strong>"אפשר" (Allow)</strong>.</div>
           <div>4. רענן את העמוד — ברגע זה כל ערוצי ה-HTTP יתחילו לנגן חלק!</div>
+        </div>
+        <div style="font-size: 0.88rem; color: #fca5a5; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: var(--radius-md); padding: 0.75rem 1rem; margin-bottom: 1rem;">
+          🚀 <strong>פתרון מיידי ללא הגדרות:</strong> לחץ על כפתור <strong>HTTP ↗</strong> האדום שעל כרטיס הערוץ — השידור ייפתח מיד בחלון נפרד ויעקוף את חסימת ה-HTTPS!
         </div>
         <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
           💡 <strong>אפשרות חלופית:</strong> פתח את האתר ברשת הביתית ב-HTTP טהור:
@@ -131769,6 +131795,7 @@ const overlayMetaEl = document.getElementById('overlayMeta');
 const overlayFavBtn = document.getElementById('overlayFavBtn');
 const theaterBtn = document.getElementById('theaterBtn');
 const overlayFullscreenBtn = document.getElementById('overlayFullscreenBtn');
+const overlayHttpBtn = document.getElementById('overlayHttpBtn');
 const playerStatusText = document.getElementById('playerStatusText');
 const playerPanel = document.querySelector('.player-panel');
 const playerBox = document.getElementById('playerBox');
@@ -132356,7 +132383,7 @@ function renderGrid() {
         <div class="card-details">
           <span>${channel.flag || '🌐'} ${channel.country || ''}</span>
           ${channel.category ? `<span class="card-tag">${channel.category}</span>` : ''}
-          ${window.location.protocol === 'https:' && channel.url.startsWith('http://') ? `<span class="proto-tag" title="שידור HTTP - זמין בגרסת HTTP">HTTP</span>` : ''}
+          ${channel.url && channel.url.startsWith('http://') ? `<button type="button" class="proto-tag proto-btn" data-url="${encodeURIComponent(channel.url)}" data-name="${encodeURIComponent(channel.name)}" title="שידור HTTP - לחץ לפתיחה בחלון חדש (עוקף חסימת HTTPS) ↗">HTTP ↗</button>` : ''}
         </div>
         ${isDead ? `<span class="offline-pill" title="ערוץ לא זמין / לא פעיל">לא פעיל</span>` : ''}
       </div>
@@ -132416,6 +132443,7 @@ function renderVodGrid() {
             <span>📅 ${item.year || ''}</span>
             ${metaExtra ? `<span>• ${metaExtra}</span>` : ''}
             <span class="card-tag">${item.category}</span>
+            ${item.streamUrl && item.streamUrl.startsWith('http://') ? `<button type="button" class="proto-tag proto-btn" data-url="${encodeURIComponent(item.streamUrl)}" data-name="${encodeURIComponent(item.title)}" title="שידור HTTP - לחץ לפתיחה בחלון חדש (עוקף חסימת HTTPS) ↗">HTTP ↗</button>` : ''}
           </div>
           <p class="vod-desc" title="${item.description}">${item.description}</p>
         </div>
@@ -132523,6 +132551,19 @@ function playChannel(channel) {
   const chId = channel.id || channel.url;
   overlayFavBtn.classList.toggle('is-fav', favorites.includes(chId));
 
+  if (overlayHttpBtn) {
+    if (channel.url && channel.url.startsWith('http://')) {
+      overlayHttpBtn.style.display = 'inline-flex';
+      overlayHttpBtn.onclick = (e) => {
+        e.stopPropagation();
+        window.open(channel.url, '_blank', 'noopener,noreferrer');
+        showToast(`🚀 פותח את ${channel.name} בחלון נפרד...`);
+      };
+    } else {
+      overlayHttpBtn.style.display = 'none';
+    }
+  }
+
   setStreamStatus('connecting', 'מתחבר לשידור...');
 
   // Highlight active channel card
@@ -132556,6 +132597,19 @@ function playMovie(movie) {
   const itemId = movie.id || movie.streamUrl;
   overlayFavBtn.classList.toggle('is-fav', favorites.includes(itemId));
 
+  if (overlayHttpBtn) {
+    if (movie.streamUrl && movie.streamUrl.startsWith('http://')) {
+      overlayHttpBtn.style.display = 'inline-flex';
+      overlayHttpBtn.onclick = (e) => {
+        e.stopPropagation();
+        window.open(movie.streamUrl, '_blank', 'noopener,noreferrer');
+        showToast(`🚀 פותח את ${movie.title} בחלון נפרד...`);
+      };
+    } else {
+      overlayHttpBtn.style.display = 'none';
+    }
+  }
+
   setStreamStatus('connecting', 'טוען סרט...');
 
   // Highlight active card
@@ -132586,6 +132640,19 @@ function playSeriesEpisode(series, ep) {
   overlayMetaEl.textContent = `📺 ${seasonStr}פרק ${epNum} • ${ep.duration || ''} • ${series.category || 'סדרה'}`;
 
   overlayFavBtn.classList.toggle('is-fav', favorites.includes(series.id));
+
+  if (overlayHttpBtn) {
+    if (ep.streamUrl && ep.streamUrl.startsWith('http://')) {
+      overlayHttpBtn.style.display = 'inline-flex';
+      overlayHttpBtn.onclick = (e) => {
+        e.stopPropagation();
+        window.open(ep.streamUrl, '_blank', 'noopener,noreferrer');
+        showToast(`🚀 פותח את ${series.title}: ${ep.title} בחלון נפרד...`);
+      };
+    } else {
+      overlayHttpBtn.style.display = 'none';
+    }
+  }
 
   // Show episode navigation in overlay
   if (overlayEpisodesBtn) overlayEpisodesBtn.style.display = 'inline-flex';
@@ -133170,6 +133237,16 @@ function setupEventListeners() {
 
   // Channel & VOD Card Click & Fav Click delegation
   channelsGrid.addEventListener('click', (e) => {
+    const protoBtn = e.target.closest('.proto-btn');
+    if (protoBtn) {
+      e.stopPropagation();
+      const url = decodeURIComponent(protoBtn.dataset.url);
+      const name = decodeURIComponent(protoBtn.dataset.name);
+      window.open(url, '_blank', 'noopener,noreferrer');
+      showToast(`🚀 פותח את ${name} בחלון נפרד...`);
+      return;
+    }
+
     const favBtn = e.target.closest('.card-fav-btn');
     if (favBtn) {
       e.stopPropagation();

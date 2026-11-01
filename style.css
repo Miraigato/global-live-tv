@@ -921,6 +921,7 @@ video {
   color: var(--text-secondary);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.4rem;
 }
 
@@ -2009,13 +2010,34 @@ video {
 }
 
 .proto-tag {
-  background: rgba(239, 68, 68, 0.2);
+  background: rgba(239, 68, 68, 0.25);
   color: #fca5a5;
-  border: 1px solid rgba(239, 68, 68, 0.4);
+  border: 1px solid rgba(239, 68, 68, 0.5);
   border-radius: 4px;
-  font-size: 0.65rem;
-  padding: 1px 4px;
+  font-size: 0.68rem;
+  padding: 2px 6px;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1.2;
+  font-family: inherit;
+  outline: none;
+}
+
+.proto-btn:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.6);
+  transform: translateY(-1px);
+}
+
+.proto-btn:active {
+  transform: translateY(0);
 }
 
 /* Auth Lock Screen */
