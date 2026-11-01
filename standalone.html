@@ -2038,11 +2038,227 @@ video {
   font-weight: 700;
 }
 
+/* Auth Lock Screen */
+.auth-lock-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: rgba(11, 15, 25, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.auth-lock-overlay.unlocked {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.auth-card {
+  background: rgba(22, 30, 49, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.85), 0 0 35px rgba(59, 130, 246, 0.25);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: authCardIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes authCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.auth-icon-wrap {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 1.25rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(37, 99, 235, 0.1));
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.35);
+}
+
+.auth-icon {
+  font-size: 2.2rem;
+}
+
+.auth-card h2 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.auth-subtitle {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.auth-input {
+  width: 100%;
+  background: rgba(11, 15, 25, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 2.8rem 0.85rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.auth-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  background: rgba(15, 23, 42, 0.95);
+}
+
+.auth-input.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+  animation: authShake 0.35s ease;
+}
+
+@keyframes authShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.auth-eye-btn {
+  position: absolute;
+  left: 0.75rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.15rem;
+  padding: 0.25rem;
+  transition: color 0.15s;
+}
+
+.auth-eye-btn:hover {
+  color: #fff;
+}
+
+.auth-error-msg {
+  color: #f87171;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: -0.3rem;
+}
+
+.btn-auth-submit {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.45);
+  transition: all 0.2s;
+}
+
+.btn-auth-submit:hover {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(37, 99, 235, 0.6);
+}
+
+.auth-hint {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.btn-lock {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.btn-lock:hover {
+  background: rgba(239, 68, 68, 0.18);
+  border-color: rgba(239, 68, 68, 0.45);
+  color: #f87171;
+}
+
+
 
 
 </style>
 </head>
 <body>
+  <!-- Password Lock Screen Overlay (Protected by 2026) -->
+  <div id="authLockScreen" class="auth-lock-overlay" style="display:flex;">
+    <div class="auth-card">
+      <div class="auth-icon-wrap">
+        <span class="auth-icon">🔒</span>
+      </div>
+      <h2>גישה מאובטחת</h2>
+      <p class="auth-subtitle">הזן את סיסמת הכניסה כדי לצפות בערוצים, סרטים וסדרות</p>
+      <form id="authForm" class="auth-form" onsubmit="return false;">
+        <div class="auth-input-group">
+          <input type="password" id="authPasswordInput" class="auth-input" placeholder="הזן סיסמה..." inputmode="numeric" autocomplete="current-password" autofocus />
+          <button type="button" id="authToggleVisibilityBtn" class="auth-eye-btn" title="הצג / הסתר סיסמה">👁️</button>
+        </div>
+        <div id="authErrorMsg" class="auth-error-msg" style="display:none;">סיסמה שגויה, נסה שנית</div>
+        <button type="submit" id="authSubmitBtn" class="btn btn-auth-submit">
+          <span>כניסה לאתר</span>
+          <span>🔓</span>
+        </button>
+      </form>
+      <div class="auth-hint">💡 רמז: השנה הנוכחית (2026)</div>
+    </div>
+  </div>
+
   <!-- Header Bar -->
   <header class="app-header">
     <div class="header-inner">
@@ -2091,6 +2307,9 @@ video {
         <button id="randomChannelBtn" class="btn btn-random" title="צפה בערוץ אקראי">
           <span>🎲</span>
           <span>ערוץ אקראי</span>
+        </button>
+        <button id="lockSiteBtn" class="btn btn-lock" title="נעל את האתר (דרוש סיסמה מחדש)">
+          <span>🔒</span>
         </button>
       </div>
     </div>
@@ -131583,8 +131802,123 @@ const overlayEpisodesBtn = document.getElementById('overlayEpisodesBtn');
 const overlayPrevEpBtn = document.getElementById('overlayPrevEpBtn');
 const overlayNextEpBtn = document.getElementById('overlayNextEpBtn');
 
+// Password Lock Screen (Current Year 2026)
+const SITE_PASSWORD = '2026';
+let isSiteUnlocked = false;
+
+const authLockScreen = document.getElementById('authLockScreen');
+const authForm = document.getElementById('authForm');
+const authPasswordInput = document.getElementById('authPasswordInput');
+const authSubmitBtn = document.getElementById('authSubmitBtn');
+const authToggleVisibilityBtn = document.getElementById('authToggleVisibilityBtn');
+const authErrorMsg = document.getElementById('authErrorMsg');
+const lockSiteBtn = document.getElementById('lockSiteBtn');
+
+function initAuth() {
+  const saved = localStorage.getItem('globaltv_auth') || sessionStorage.getItem('globaltv_auth');
+  if (saved === SITE_PASSWORD) {
+    unlockSite(false);
+  } else {
+    lockSite();
+  }
+
+  if (authForm) {
+    authForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      handleAuthSubmit();
+    });
+  }
+
+  if (authSubmitBtn) {
+    authSubmitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      handleAuthSubmit();
+    });
+  }
+
+  if (authToggleVisibilityBtn && authPasswordInput) {
+    authToggleVisibilityBtn.addEventListener('click', () => {
+      const isPwd = authPasswordInput.type === 'password';
+      authPasswordInput.type = isPwd ? 'text' : 'password';
+      authToggleVisibilityBtn.textContent = isPwd ? '🙈' : '👁️';
+    });
+  }
+
+  if (lockSiteBtn) {
+    lockSiteBtn.addEventListener('click', () => {
+      localStorage.removeItem('globaltv_auth');
+      sessionStorage.removeItem('globaltv_auth');
+      lockSite();
+      showToast('🔒 האתר ננעל בהצלחה');
+    });
+  }
+}
+
+function handleAuthSubmit() {
+  if (!authPasswordInput) return;
+  const val = (authPasswordInput.value || '').trim();
+  if (val === SITE_PASSWORD) {
+    localStorage.setItem('globaltv_auth', SITE_PASSWORD);
+    sessionStorage.setItem('globaltv_auth', SITE_PASSWORD);
+    unlockSite(true);
+    showToast('🔓 הכניסה אושרה!');
+  } else {
+    if (authErrorMsg) authErrorMsg.style.display = 'block';
+    authPasswordInput.classList.add('error');
+    authPasswordInput.value = '';
+    setTimeout(() => {
+      authPasswordInput.classList.remove('error');
+      authPasswordInput.focus();
+    }, 450);
+  }
+}
+
+function unlockSite(animate = true) {
+  isSiteUnlocked = true;
+  if (authErrorMsg) authErrorMsg.style.display = 'none';
+  if (authLockScreen) {
+    authLockScreen.classList.add('unlocked');
+    if (!animate) {
+      authLockScreen.style.display = 'none';
+    } else {
+      setTimeout(() => {
+        authLockScreen.style.display = 'none';
+      }, 350);
+    }
+  }
+  document.body.style.overflow = '';
+
+  // Start default stream if not already playing and channels loaded
+  if (!currentChannel && !currentVodItem && allChannels.length > 0) {
+    const candidate = allChannels.find(c => c.country === 'IL' && c.name.includes('Kan 11')) ||
+                     allChannels.find(c => c.country === 'IL') ||
+                     allChannels[0];
+    if (candidate) {
+      playChannel(candidate);
+    }
+  }
+}
+
+function lockSite() {
+  isSiteUnlocked = false;
+  if (videoEl) {
+    videoEl.pause();
+  }
+  if (authLockScreen) {
+    authLockScreen.style.display = 'flex';
+    authLockScreen.classList.remove('unlocked');
+  }
+  if (authPasswordInput) {
+    authPasswordInput.value = '';
+    setTimeout(() => authPasswordInput.focus(), 80);
+  }
+  if (authErrorMsg) authErrorMsg.style.display = 'none';
+  document.body.style.overflow = 'hidden';
+}
+
 // Initialize
 async function init() {
+  initAuth();
   updateFavoritesBadge();
   setupEventListeners();
 
@@ -131633,11 +131967,11 @@ async function init() {
     buildSidebarFilters();
     applyFilters();
 
-    // Auto-select a top Israeli or popular channel if available
+    // Auto-select a top Israeli or popular channel if available (only if unlocked)
     const initialCandidate = allChannels.find(c => c.country === 'IL' && c.name.includes('Kan 11')) ||
                              allChannels.find(c => c.country === 'IL') ||
                              allChannels[0];
-    if (initialCandidate) {
+    if (initialCandidate && isSiteUnlocked) {
       playChannel(initialCandidate);
     }
   } catch (err) {

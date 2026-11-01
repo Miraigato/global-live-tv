@@ -20,6 +20,29 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Password Lock Screen Overlay (Protected by 2026) -->
+  <div id="authLockScreen" class="auth-lock-overlay" style="display:flex;">
+    <div class="auth-card">
+      <div class="auth-icon-wrap">
+        <span class="auth-icon">🔒</span>
+      </div>
+      <h2>גישה מאובטחת</h2>
+      <p class="auth-subtitle">הזן את סיסמת הכניסה כדי לצפות בערוצים, סרטים וסדרות</p>
+      <form id="authForm" class="auth-form" onsubmit="return false;">
+        <div class="auth-input-group">
+          <input type="password" id="authPasswordInput" class="auth-input" placeholder="הזן סיסמה..." inputmode="numeric" autocomplete="current-password" autofocus />
+          <button type="button" id="authToggleVisibilityBtn" class="auth-eye-btn" title="הצג / הסתר סיסמה">👁️</button>
+        </div>
+        <div id="authErrorMsg" class="auth-error-msg" style="display:none;">סיסמה שגויה, נסה שנית</div>
+        <button type="submit" id="authSubmitBtn" class="btn btn-auth-submit">
+          <span>כניסה לאתר</span>
+          <span>🔓</span>
+        </button>
+      </form>
+      <div class="auth-hint">💡 רמז: השנה הנוכחית (2026)</div>
+    </div>
+  </div>
+
   <!-- Header Bar -->
   <header class="app-header">
     <div class="header-inner">
@@ -68,6 +91,9 @@
         <button id="randomChannelBtn" class="btn btn-random" title="צפה בערוץ אקראי">
           <span>🎲</span>
           <span>ערוץ אקראי</span>
+        </button>
+        <button id="lockSiteBtn" class="btn btn-lock" title="נעל את האתר (דרוש סיסמה מחדש)">
+          <span>🔒</span>
         </button>
       </div>
     </div>

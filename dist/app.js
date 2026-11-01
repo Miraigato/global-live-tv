@@ -98,8 +98,123 @@ const overlayEpisodesBtn = document.getElementById('overlayEpisodesBtn');
 const overlayPrevEpBtn = document.getElementById('overlayPrevEpBtn');
 const overlayNextEpBtn = document.getElementById('overlayNextEpBtn');
 
+// Password Lock Screen (Current Year 2026)
+const SITE_PASSWORD = '2026';
+let isSiteUnlocked = false;
+
+const authLockScreen = document.getElementById('authLockScreen');
+const authForm = document.getElementById('authForm');
+const authPasswordInput = document.getElementById('authPasswordInput');
+const authSubmitBtn = document.getElementById('authSubmitBtn');
+const authToggleVisibilityBtn = document.getElementById('authToggleVisibilityBtn');
+const authErrorMsg = document.getElementById('authErrorMsg');
+const lockSiteBtn = document.getElementById('lockSiteBtn');
+
+function initAuth() {
+  const saved = localStorage.getItem('globaltv_auth') || sessionStorage.getItem('globaltv_auth');
+  if (saved === SITE_PASSWORD) {
+    unlockSite(false);
+  } else {
+    lockSite();
+  }
+
+  if (authForm) {
+    authForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      handleAuthSubmit();
+    });
+  }
+
+  if (authSubmitBtn) {
+    authSubmitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      handleAuthSubmit();
+    });
+  }
+
+  if (authToggleVisibilityBtn && authPasswordInput) {
+    authToggleVisibilityBtn.addEventListener('click', () => {
+      const isPwd = authPasswordInput.type === 'password';
+      authPasswordInput.type = isPwd ? 'text' : 'password';
+      authToggleVisibilityBtn.textContent = isPwd ? '🙈' : '👁️';
+    });
+  }
+
+  if (lockSiteBtn) {
+    lockSiteBtn.addEventListener('click', () => {
+      localStorage.removeItem('globaltv_auth');
+      sessionStorage.removeItem('globaltv_auth');
+      lockSite();
+      showToast('🔒 האתר ננעל בהצלחה');
+    });
+  }
+}
+
+function handleAuthSubmit() {
+  if (!authPasswordInput) return;
+  const val = (authPasswordInput.value || '').trim();
+  if (val === SITE_PASSWORD) {
+    localStorage.setItem('globaltv_auth', SITE_PASSWORD);
+    sessionStorage.setItem('globaltv_auth', SITE_PASSWORD);
+    unlockSite(true);
+    showToast('🔓 הכניסה אושרה!');
+  } else {
+    if (authErrorMsg) authErrorMsg.style.display = 'block';
+    authPasswordInput.classList.add('error');
+    authPasswordInput.value = '';
+    setTimeout(() => {
+      authPasswordInput.classList.remove('error');
+      authPasswordInput.focus();
+    }, 450);
+  }
+}
+
+function unlockSite(animate = true) {
+  isSiteUnlocked = true;
+  if (authErrorMsg) authErrorMsg.style.display = 'none';
+  if (authLockScreen) {
+    authLockScreen.classList.add('unlocked');
+    if (!animate) {
+      authLockScreen.style.display = 'none';
+    } else {
+      setTimeout(() => {
+        authLockScreen.style.display = 'none';
+      }, 350);
+    }
+  }
+  document.body.style.overflow = '';
+
+  // Start default stream if not already playing and channels loaded
+  if (!currentChannel && !currentVodItem && allChannels.length > 0) {
+    const candidate = allChannels.find(c => c.country === 'IL' && c.name.includes('Kan 11')) ||
+                     allChannels.find(c => c.country === 'IL') ||
+                     allChannels[0];
+    if (candidate) {
+      playChannel(candidate);
+    }
+  }
+}
+
+function lockSite() {
+  isSiteUnlocked = false;
+  if (videoEl) {
+    videoEl.pause();
+  }
+  if (authLockScreen) {
+    authLockScreen.style.display = 'flex';
+    authLockScreen.classList.remove('unlocked');
+  }
+  if (authPasswordInput) {
+    authPasswordInput.value = '';
+    setTimeout(() => authPasswordInput.focus(), 80);
+  }
+  if (authErrorMsg) authErrorMsg.style.display = 'none';
+  document.body.style.overflow = 'hidden';
+}
+
 // Initialize
 async function init() {
+  initAuth();
   updateFavoritesBadge();
   setupEventListeners();
 
@@ -148,11 +263,11 @@ async function init() {
     buildSidebarFilters();
     applyFilters();
 
-    // Auto-select a top Israeli or popular channel if available
+    // Auto-select a top Israeli or popular channel if available (only if unlocked)
     const initialCandidate = allChannels.find(c => c.country === 'IL' && c.name.includes('Kan 11')) ||
                              allChannels.find(c => c.country === 'IL') ||
                              allChannels[0];
-    if (initialCandidate) {
+    if (initialCandidate && isSiteUnlocked) {
       playChannel(initialCandidate);
     }
   } catch (err) {
